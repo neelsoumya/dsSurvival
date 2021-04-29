@@ -8,11 +8,17 @@ This is a standalone bolt on package for survival analysis in DataSHIELD.
 
     * https://github.com/neelsoumya/dsSurvivalClient
 
+* DataSHIELD 
+
+    * https://www.datashield.ac.uk
+
 * Contact
 
     * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
 
     * sb2333@cam.ac.uk
+
+
     
 
 
