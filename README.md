@@ -23,6 +23,16 @@ This is a standalone bolt on package for survival analysis in DataSHIELD.
     
     ```
 
+
+
+* Usage:
+
+    * see vignettes
+
+    * https://github.com/neelsoumya/dsSurvivalClient/blob/main/vignettes/development_plan.rmd
+
+    * https://github.com/neelsoumya/dsSurvivalClient/blob/main/vignettes/development_plan.pdf 
+
 * DataSHIELD 
 
     * https://www.datashield.ac.uk
