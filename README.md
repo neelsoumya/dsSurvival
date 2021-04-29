@@ -24,7 +24,6 @@ This is a standalone bolt on package for survival analysis in DataSHIELD.
     ```
 
 
-
 * Usage:
 
     * see vignettes
