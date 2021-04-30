@@ -18,6 +18,14 @@ library(nlme)
 library(stringr)
 library(lme4)
 
+library(devtools)
+library(testthat)
+library(dsBase)
+library(dsBaseClient)
+require('DSI')
+require('DSOpal')
+
+
 source("disclosure/set_disclosure_settings.R")
 source("random/set_random_seed_settings.R")
 
