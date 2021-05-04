@@ -36,18 +36,13 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 * https://github.com/neelsoumya/dsSurvivalClient/blob/main/vignettes/development_plan.pdf 
 
 
-# Contact
-
-* Soumya Banerjee, Tom Bishop and DataSHIELD technical team
-
-* sb2333@cam.ac.uk
 
 
 ### Support or Contact
 
 * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
 
-    * sb2333@cam.ac.uk
+* sb2333@cam.ac.uk
 
 * DataSHIELD 
 
