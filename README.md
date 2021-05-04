@@ -13,7 +13,7 @@ DataSHIELD is a platform for federated analysis of private data.
 # Installation
 
     ```
-   install.packages('devtools')
+        install.packages('devtools')
 	
 	library(devtools)
 	
