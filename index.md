@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 
 Survival functions for DataSHIELD. These are server side functions for survival models and Cox models.
@@ -10,7 +10,7 @@ This is a standalone bolt on package for survival analysis in DataSHIELD.
     * https://github.com/neelsoumya/dsSurvivalClient
 
 
-# Installation
+## Installation
 
 ```
 install.packages('devtools')
@@ -28,7 +28,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 ```
 
 
-# Usage:
+## Usage:
 
 * see vignettes
 
@@ -39,7 +39,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 
 
 
-### Support or Contact
+## Support or Contact
 
 * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
 
