@@ -12,9 +12,9 @@ This is a standalone bolt on package for survival analysis in DataSHIELD.
 * Installation
 
     ```
-   install.packages('devtools')
+        install.packages('devtools')
 	
-	library(devtools)
+        library(devtools)
 	
         devtools::install_github('neelsoumya/dsBaseClient')
 	
