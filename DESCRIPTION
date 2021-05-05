@@ -9,7 +9,6 @@ Depends:
     R (>= 3.5.0)
 Imports:
     RANN,
-    nlme,
     stringr,
     survival,
     ggplot2,
