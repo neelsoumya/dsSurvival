@@ -50,9 +50,3 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 
     * https://www.datashield.ac.uk
 
-
-    
-
-
-
-
