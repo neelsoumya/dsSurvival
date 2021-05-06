@@ -37,6 +37,12 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 * https://github.com/neelsoumya/dsSurvivalClient/blob/main/vignettes/development_plan.pdf 
 
 
+# Acknowledgements
+
+We acknowledge the help and support of the DataSHIELD technical team.
+We are especially grateful to Paul Burton, Demetris Avraam, Stuart Wheater and
+Patricia Ryser-Welch for fruitful discussions and feedback.
+
 
 # Contact
 
