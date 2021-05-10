@@ -2,7 +2,7 @@
 
 Survival functions for DataSHIELD. These are server side functions for survival models and Cox models.
 
-This is a standalone bolt on package for survival analysis in DataSHIELD.
+This is a standalone bolt-on package for survival analysis in DataSHIELD.
 
 DataSHIELD is a platform for federated analysis of private data.
 
@@ -44,8 +44,7 @@ A screenshot of meta-analyzed hazard ratios from the survival model is shown bel
 # Acknowledgements
 
 We acknowledge the help and support of the DataSHIELD technical team.
-We are especially grateful to Paul Burton, Demetris Avraam, Stuart Wheater and
-Patricia Ryser-Welch for fruitful discussions and feedback.
+We are especially grateful to Paul Burton, Demetris Avraam, Stuart Wheater, Patricia Ryser-Welch and Wolfgang Vichtbauer for fruitful discussions and feedback.
 
 
 # Contact
