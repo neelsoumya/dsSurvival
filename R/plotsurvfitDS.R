@@ -81,7 +81,7 @@ plotsurvfitDS<-function(formula = NULL,
   survfit_model_variable = eval(parse(text=formula), envir = parent.frame())
   
   # set method to probabilistic
-  # TODO: make arguments
+  # hard coded for now
   method_anonymization = 2
   noise = 0.03 # 0.0003 # 0.03 0.26
   
@@ -99,9 +99,7 @@ plotsurvfitDS<-function(formula = NULL,
     # if there is a seed, then set it
     set.seed(seed)	
     
-    
     percentage <- noise
-    
     
     ##########################################
     # Approach 1: add noise before plotting
@@ -125,7 +123,7 @@ plotsurvfitDS<-function(formula = NULL,
       prev_lower_temp <- survfit_model_variable$lower[i_temp_counter_inner - 1]
       
       # add some noise 
-      # TODO: make noise a percentage of previous OR current value
+      # can make noise a percentage of previous OR current value
       # delta_noise <- abs(stats::rnorm(n = 1, mean = value_temp, sd = percentage * value_temp))
       delta_noise <- stats::rnorm(n = 1, mean = 0, sd = percentage)
       
