@@ -20,6 +20,7 @@ AggregateMethods:
     coxphSummaryDS,
     cox.zphSLMADS,
     summarySurvDS,
+    plotsurvfitDS
 AssignMethods:
     coxphSLMAassignDS,
     SurvDS,
