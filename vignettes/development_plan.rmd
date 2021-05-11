@@ -312,13 +312,13 @@ summary(coxph_model_strata)
 # Summary of survival objects
 
 We can also summarize a server-side object of type *survival::Surv()*
-using a call to *ds.summary()*. This will provide a non-disclosive
+using a call to *ds.coxphSummary()*. This will provide a non-disclosive
 summary of the server-side object. An example call is shown below:
 
 
 ```
 
-dsSurvivalClient::ds.summary(x = 'surv_object')
+dsSurvivalClient::ds.coxphSummary(x = 'coxph_serverside')
 
 ```
 
@@ -467,6 +467,11 @@ dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object')
 
 
 dsSurvivalClient::ds.survfit(formula='surv_object~1', objectname='survfit_object')
+
+
+```
+
+```{r fig.cap="Privacy preserving survival curve.", echo = FALSE}
 
 dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object')
 
