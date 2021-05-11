@@ -9,7 +9,7 @@
 #' @param formula a character string which has the name of server-side survfit() object.
 #'		This should be created using ds.survfit()
 #' @param dataName character string of name of data frame
-#' @return a summary of the Cox proportional hazards from the server side environment from the server side environment.
+#' @return a privacy preserving survival curve from the server side environment.
 #' @author Soumya Banerjee, Tom Bishop, Demetris Avraam, Paul Burton and DataSHIELD technical team (2021).
 #' @export
 plotsurvfitDS<-function(formula = NULL,
@@ -126,7 +126,6 @@ plotsurvfitDS<-function(formula = NULL,
       # survfit_model_variable$mono[i_temp_counter_inner] = prev_value_temp - survfit_model_variable$surv[i_temp_counter_inner]
       
       # new noise for x axis
-      # needs more work, also monotonic
       delta_noise <- stats::rnorm(n = 1, mean = 0, sd = percentage)
       survfit_model_variable$time[i_temp_counter_inner] <- survfit_model_variable$time[i_temp_counter_inner] - delta_noise
       
