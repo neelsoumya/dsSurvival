@@ -9,34 +9,12 @@
 #' @param formula a character string which has the name of server-side survfit() object.
 #'		This should be created using ds.survfit()
 #' @param dataName character string of name of data frame
-#' @param weights vector of case weights
-#' @param init vector of initial values of the iteration
-#' @param ties character string specifying the method for tie handling.
-#'          The Efron approximation is used as the default. Other options are
-#'          'breslow' and 'exact'.
-#' @param singular.ok Logical value indicating how to handle collinearity in the model matrix.
-#'        Default is TRUE. If TRUE, the program will automatically skip over columns of the 
-#'        X matrix that are linear combinations of earlier columns. In this case the coefficients
-#'        of such columns will be NA and the variance matrix will contain zeros.
-#' @param model logical value. If TRUE, the model frame is returned in component model. 
-#' @param x logical value. If TRUE, the x matrix is returned in component x.
-#' @param y logical value. If TRUE, the response vector is returned in component y.
-#' @param control object of type survival::coxph.control() specifying iteration limit and other
-#'        control options. Default is survival::coxph.control()
 #' @return a summary of the Cox proportional hazards from the server side environment from the server side environment.
 #' @author Soumya Banerjee, Tom Bishop, Demetris Avraam, Paul Burton and DataSHIELD technical team (2021).
 #' @export
 plotsurvfitDS<-function(formula = NULL,
-                        dataName = NULL,
-                        weights = NULL,
-                        init = NULL,
-                        ties = 'efron',
-                        singular.ok = TRUE,
-                        model = FALSE,
-                        x = FALSE,
-                        y = TRUE,
-                        control = NULL
-)
+                        dataName = NULL
+                       )
 {
   
   errorMessage <- "No errors"
@@ -70,8 +48,7 @@ plotsurvfitDS<-function(formula = NULL,
   if (is.null(formula))
   {
     stop("The formula must be set for use in survival::coxph()", call.=FALSE)
-  } 	
-  
+  }
   
   ###########################
   # disclosure checks
