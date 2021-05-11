@@ -13,7 +13,7 @@ This should be created using ds.survfit()}
 \item{dataName}{character string of name of data frame}
 }
 \value{
-a summary of the Cox proportional hazards from the server side environment from the server side environment.
+a privacy preserving survival curve from the server side environment.
 }
 \description{
 returns a privacy preserving survival curve.
