@@ -1,7 +1,7 @@
 ---
 title: "Meta-analysis of survival models in the DataSHIELD platform"
 author: "Soumya Banerjee, Tom Bishop and DataSHIELD technical team "
-date: "11 May 2021"
+date: "12 May 2021"
 output:
   pdf_document:
     toc: yes
@@ -471,7 +471,7 @@ dsSurvivalClient::ds.survfit(formula='surv_object~1', objectname='survfit_object
 
 ```
 
-```{r fig.cap="Privacy preserving survival curve.", echo = FALSE}
+```{r fig.cap="Privacy preserving survival curves.", echo = FALSE}
 
 dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object')
 
