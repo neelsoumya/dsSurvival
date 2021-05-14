@@ -1,7 +1,7 @@
 ---
 title: "Meta-analysis of survival models in the DataSHIELD platform"
 author: "Soumya Banerjee, Tom Bishop and DataSHIELD technical team "
-date: "12 May 2021"
+date: "14 May 2021"
 output:
   pdf_document:
     toc: yes
@@ -258,10 +258,10 @@ dsBaseClient::ds.ls()
 ```
 
 
-# Create survival object and call coxphSLMA()
+# Create survival object and call ds.coxph.SLMA()
 
 
-* use constructed Surv object in *coxph.SLMA()*
+* use constructed Surv object in *ds.coxph.SLMA()*
 
 ```
 dsSurvivalClient::ds.Surv(time='STARTTIME', time2='ENDTIME', 
@@ -492,7 +492,7 @@ DSI::datashield.logout(conns = connections)
 # Acknowledgements
 
 We acknowledge the help and support of the DataSHIELD technical team.
-We are especially grateful to Paul Burton, Demetris Avraam, Stuart Wheater, Patricia Ryser-Welch and Wolfgang Vichtbauer for fruitful discussions and feedback.
+We are especially grateful to Paul Burton, Demetris Avraam, Stuart Wheater, Patricia Ryser-Welch, Xavier Escriba, Juan Gonzalez and Wolfgang Vichtbauer for fruitful discussions and feedback.
 
 
 # References
