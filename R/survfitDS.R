@@ -78,18 +78,7 @@ survfitDS<-function(formula=NULL)
       # call survival:: survfit
       # TODO: inject random noise
       survfit_object <- survival::survfit(formula)
-      
-      
-      
-      # surv_object <- eval(parse(text='survival::Surv(time = SURVTIME, event = EVENT)'), envir = parent.frame())
-      
-      # surv_object <- "HellofromSurvDS"
-      
-      # cat('\n Hello World from server-side function coxphSLMADS() in dsBase \n')
-      # temp_str <- 'Hello World from server-side dsBase::coxphSLMADS()'
-      # outlist <- paste0(search.filter, temp_str)
-      # return(outlist)
-      
+            
       return(survfit_object)
 }
 #ASSIGN FUNCTION
