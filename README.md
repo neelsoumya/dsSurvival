@@ -68,3 +68,4 @@ We are especially grateful to Paul Burton, Demetris Avraam, Stuart Wheater, Patr
 
 If you use the code, please cite the following DOI
 
+[![DOI](https://zenodo.org/badge/362161587.svg)](https://zenodo.org/badge/latestdoi/362161587)
