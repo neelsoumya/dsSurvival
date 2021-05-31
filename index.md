@@ -26,7 +26,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 ```
 
 
-## Usage:
+## Usage
 
 * see vignettes
 
@@ -35,6 +35,8 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 * https://github.com/neelsoumya/dsSurvivalClient/blob/main/vignettes/development_plan.pdf 
 
 
+
+![Meta-analyzed hazard ratios from a survival model](screenshot_survival_models.png)
 
 
 
