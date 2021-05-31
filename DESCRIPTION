@@ -2,8 +2,8 @@ Package: dsSurvival
 Title: DataSHIELD server site base functions for survival functions
 Description: DataSHIELD server site base functions fro survival functions.
 Version: 6.2.0-1
-Author: Soumya Banerjee, Demetris Avraam, Xavier Escriba Montagut, Juan Gonzalez, Paul Burton, Tom R P Bishop and DataSHIELD technical team <datashield@newcastle.ac.uk>
-Maintainer: Soumya Banerjee, Demetris Avraam, Xavier Escriba Montagut, Juan Gonzalez, Paul Burton, Tom R P Bishop and DataSHIELD technical team <datashield@newcastle.ac.uk>
+Author: Soumya Banerjee, Demetris Avraam, Xavier Escriba Montagut, Juan Gonzalez, Paul Burton and Tom R P Bishop <sb2333@cam.ac.uk>
+Maintainer: Soumya Banerjee, Demetris Avraam, Xavier Escriba Montagut, Juan Gonzalez, Paul Burton and Tom R P Bishop <sb2333@cam.ac.uk>
 License: GPL-3
 Depends: 
     R (>= 3.5.0)
