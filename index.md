@@ -34,7 +34,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 
 * https://github.com/neelsoumya/dsSurvivalClient/blob/main/vignettes/development_plan.pdf 
 
-
+The meta-analyzed hazard ratios from a survival model are shown below.
 
 ![Meta-analyzed hazard ratios from a survival model](screenshot_survival_models.png)
 
@@ -48,7 +48,7 @@ We are especially grateful to Paul Burton, Demetris Avraam, Stuart Wheater, Patr
 
 ## Support or Contact
 
-* Soumya Banerjee, Demetris Avraam, Paul Burton, Xavier Escriba, Juan Gonzalez, Tom Bishop and DataSHIELD technical team
+* Soumya Banerjee, Demetris Avraam, Paul Burton, Xavier Escriba, Juan Gonzalez and Tom R P Bishop
 
 * sb2333@cam.ac.uk
 
