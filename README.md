@@ -50,7 +50,7 @@ v1.0.0: A basic release of survival models in DataSHIELD. This release has Cox p
 # Acknowledgements
 
 We acknowledge the help and support of the DataSHIELD technical team.
-We are especially grateful to Paul Burton, Demetris Avraam, Stuart Wheater, Patricia Ryser-Welch and Wolfgang Vichtbauer for fruitful discussions and feedback.
+We are especially grateful to Yannick Marcon, Paul Burton, Demetris Avraam, Stuart Wheater, Patricia Ryser-Welch and Wolfgang Vichtbauer for fruitful discussions and feedback.
 
 
 # Contact
