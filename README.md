@@ -53,6 +53,9 @@ A shiny graphical user interface for survival models has also been created by Xa
 * https://github.com/isglobal-brge/ShinyDataSHIELD
 
 
+v1.1.0: Forthcoming. This will have privacy preserving survival curves.
+
+
 # Acknowledgements
 
 We acknowledge the help and support of the DataSHIELD technical team.
