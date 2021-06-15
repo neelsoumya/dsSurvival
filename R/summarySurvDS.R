@@ -9,7 +9,7 @@
 #' For further details see help for {ds.summary} function.
 #' @param object name of server-side survival object.
 #' @return a list which is a summary of server-side survival model.
-#' @author Soumya Banerjee and Tom Bishop (2020).
+#' @author Soumya Banerjee and Tom Bishop (2021).
 #' @export
 summarySurvDS<-function(object=NULL)
 {
