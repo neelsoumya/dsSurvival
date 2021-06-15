@@ -19,7 +19,7 @@
 #'	properly when they cross over from one strata to another. This parameter has rarely
 #'	proven useful.
 #' @return a survival::Surv() object from the server side environment.
-#' @author Soumya Banerjee and Tom Bishop (2020).
+#' @author Soumya Banerjee and Tom Bishop (2021).
 #' @export
 SurvDS<-function(time = NULL,
                  time2 = NULL,
@@ -103,20 +103,6 @@ SurvDS<-function(time = NULL,
       }	      
 	      
 	
-      # construct a call to Surv function with these parameters
-      # surv_object <- survival::Surv(time = SURVTIME, event = EVENT)
-      # str_command = paste0('survival::Surv(time = ', time)
-      # str_command = paste0("survival::Surv(time = ", time)
-      # str_command = paste0(str_command, ", time2 = ") 
-      # str_command = paste0(str_command, time2)
-      # str_command = paste0(str_command, ", event = ") 
-      # str_command = paste0(str_command, event)
-      # #str_command = paste0(str_command, ", type = ")
-      # #str_command = paste0(str_command, type)
-      # str_command = paste0(str_command, ", origin = ")
-      # str_command = paste0(str_command, origin)	
-      # str_command = paste0(str_command, ")")
-      
       # evaluate this
       # surv_object <- eval(parse(text=str_command), envir = parent.frame())
  
