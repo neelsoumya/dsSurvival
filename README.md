@@ -71,6 +71,8 @@ We are especially grateful to Yannick Marcon, Paul Burton, Demetris Avraam, Stua
 
 * DataSHIELD 
 
+    * DataSHIELD is a platform that enables the non-disclosive analysis of distributed sensitive data 
+
     * https://www.datashield.ac.uk
 
 
