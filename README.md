@@ -10,6 +10,7 @@ DataSHIELD is a platform for federated analysis of private data.
 
     * https://github.com/neelsoumya/dsSurvivalClient
 
+
 # Installation
 
 ```
@@ -28,7 +29,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 ```
 
 
-# Usage:
+# Usage
 
 * see vignettes
 
