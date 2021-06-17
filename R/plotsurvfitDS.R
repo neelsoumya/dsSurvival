@@ -137,7 +137,7 @@ plotsurvfitDS<-function(formula = NULL,
   if (method_anonymization == 1)
   {
         # TODO: implement this
-        survfit_model_variable = 1
+        # survfit_model_variable = NULL
   }  
     
 
