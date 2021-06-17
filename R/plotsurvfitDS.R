@@ -133,6 +133,15 @@ plotsurvfitDS<-function(formula = NULL,
     
   }
   
+  # deterministic anonymization by Demetris Avraam and Paul Burton
+  if (method_anonymization == 1)
+  {
+        # TODO: implement this
+        survfit_model_variable = 1
+  }  
+    
+
+  
   return(survfit_model_variable)
 
 }
