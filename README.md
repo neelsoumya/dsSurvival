@@ -31,7 +31,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 
 # Usage
 
-* see vignettes
+* see vignettes and tutorials below
 
 * https://github.com/neelsoumya/dsSurvivalClient/blob/main/vignettes/development_plan.rmd
 
