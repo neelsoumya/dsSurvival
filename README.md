@@ -13,21 +13,52 @@ DataSHIELD is a platform for federated analysis of private data.
 
 # Installation
 
+
+* Install R Studio and the development environment as described below:
+
+    * https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943461/Getting+started
+
+
+* Then install the virtual machines as described below:
+
+    * https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/931069953/Installation+Training+Hub-+DataSHIELD+v6
+
+* Install dsSurvival on the Opal server in the VM
+
+
 ```
 
 install.packages('devtools')
-	
+
 library(devtools)
-	
+
 devtools::install_github('neelsoumya/dsBaseClient')
 	
 devtools::install_github('neelsoumya/dsBase')
 
 devtools::install_github('neelsoumya/dsSurvivalClient')
-			 
 
 ```
 
+If you want to use a certain release then you can do the following
+
+```
+
+library(devtools)
+
+devtools::install_github('neelsoumya/dsSurvivalClient@v1.0.0')
+
+```
+
+If you want to try privacy preserving survival curves (work in progress and to be available in v1.1.0), then you can do the following
+
+```
+
+library(devtools)
+
+devtools::install_github('neelsoumya/dsSurvivalClient', ref = 'privacy_survival_curves')
+
+```
 
 # Usage
 
