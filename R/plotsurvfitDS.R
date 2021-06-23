@@ -58,10 +58,10 @@ plotsurvfitDS<-function(formula = NULL,
   survfit_model_variable = eval(parse(text=formula), envir = parent.frame())
   
   # set method to probabilistic
-  # hard coded for now
-  method_anonymization = 2
+  # TODO: make parameters
+  method_anonymization = 1
   noise = 0.03 # 0.0003 # 0.03 0.26
-  # TODO: make this a parameter and check if it is not less than a threshold (see plothistogramDS)	  
+  # TODO: make this a parameter and check if knn is not less than a threshold (see plothistogramDS)	  
   knn <- 20	
   
   ##############################################################
