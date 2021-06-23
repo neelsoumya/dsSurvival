@@ -61,6 +61,8 @@ plotsurvfitDS<-function(formula = NULL,
   # hard coded for now
   method_anonymization = 2
   noise = 0.03 # 0.0003 # 0.03 0.26
+  # TODO: make this a parameter and check if it is not less than a threshold (see plothistogramDS)	  
+  knn <- 20	
   
   ##############################################################
   # if probabilistic anonymization then generate and add noise	
@@ -152,10 +154,7 @@ plotsurvfitDS<-function(formula = NULL,
   ######################################################################
   if (method_anonymization == 1)
   {
-	  
-        # TODO: make this a parameter and check if it is not less than a threshold (see plothistogramDS)	  
-	knn <- 20
-
+        
         # Step 1: Standardise the variable
         time.standardised <- (survfit_model_variable$time-mean(survfit_model_variable$time))/stats::sd(survfit_model_variable$time)
 
