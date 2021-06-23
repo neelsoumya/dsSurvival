@@ -25,8 +25,9 @@ DataSHIELD is a platform for federated analysis of private data.
 
     * https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/1657634898/Tutorial+6.1.0+100+VM
 
-* Install dsSurvival on the Opal server in the VM (type neelsoumya/dsSurvival and main in the textboxes)
+* Install dsBase and dsSurvival on Opal server in the VM (type neelsoumya/dsSurvival and main in the textboxes) as shown in the screenshot below
 
+![Screenshot of installation of package in VM](Capture_VM_install_screenshot.PNG)
 
 ```
 
