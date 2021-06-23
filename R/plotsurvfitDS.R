@@ -81,13 +81,13 @@ plotsurvfitDS<-function(formula = NULL,
     
     # TODO: check if percentage of noise greater than threshold
     # if(noise < nfilter.noise)
-	  # {
-	  #	  stop(paste0("'noise' must be greater than or equal to ", nfilter.noise), call.=FALSE)
-	  # }
-	  # else
-	  # {
-	  #	  percentage <- noise
-	  # }
+    # {
+    #	  stop(paste0("'noise' must be greater than or equal to ", nfilter.noise), call.=FALSE)
+    # }
+    # else
+    # {
+    #	  percentage <- noise
+    # }
     
     percentage <- noise
     
@@ -152,12 +152,40 @@ plotsurvfitDS<-function(formula = NULL,
   ######################################################################
   if (method_anonymization == 1)
   {
-        # TODO: implement this
-        # survfit_model_variable = NULL
+	  
+        # TODO: make this a parameter and check if it is not less than a threshold (see plothistogramDS)	  
+	knn <- 20
+
+        # Step 1: Standardise the variable
+        time.standardised <- (survfit_model_variable$time-mean(survfit_model_variable$time))/stats::sd(survfit_model_variable$time)
+
+        # Step 2: Find the k-1 nearest neighbours of each data point
+        nearest <- RANN::nn2(time.standardised, k = knn)
+
+        # Step 3: Calculate the centroid of each n nearest data points
+        time.centroid <- matrix()
+        for (i in 1:length(survfit_model_variable$time))
+	{
+             time.centroid[i] <- mean(time.standardised[nearest$nn.idx[i,1:knn]])
+        }
+
+        # Step 4: Calculate the scaling factor
+        time.scalingFactor <- stats::sd(time.standardised)/stats::sd(time.centroid)
+
+        # Step 5: Apply the scaling factor to the centroids
+        time.masked <- time.centroid * time.scalingFactor
+
+        # Step 6: Shift the centroids back to the actual position and scale of the original data
+        SURVTIME_anon <- (time.masked * stats::sd(survfit_model_variable$time)) + mean(survfit_model_variable$time)
+
+        # modify time in survfit object (instead of original time)
+        survfit_model_variable$time <- SURVTIME_anon
+	  
+	  
   }  
     
 
-  
+  # return modified survfit object
   return(survfit_model_variable)
 
 }
