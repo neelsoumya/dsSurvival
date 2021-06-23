@@ -59,7 +59,7 @@ plotsurvfitDS<-function(formula = NULL,
   
   # set method to probabilistic
   # TODO: make parameters
-  method_anonymization = 1
+  method_anonymization = 2
   noise = 0.03 # 0.0003 # 0.03 0.26
   # TODO: make this a parameter and check if knn is not less than a threshold (see plothistogramDS)	  
   knn <- 20	
