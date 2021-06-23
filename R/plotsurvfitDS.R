@@ -62,10 +62,9 @@ plotsurvfitDS<-function(formula = NULL,
   method_anonymization = 2
   noise = 0.03 # 0.0003 # 0.03 0.26
   
-  # TODO: check if percentage of noise greater than threshold
-  
-  
+  ##############################################################
   # if probabilistic anonymization then generate and add noise	
+  ##############################################################
   if (method_anonymization == 2)
   {	      
     
@@ -78,6 +77,17 @@ plotsurvfitDS<-function(formula = NULL,
     
     # if there is a seed, then set it
     set.seed(seed)	
+    
+    
+    # TODO: check if percentage of noise greater than threshold
+    # if(noise < nfilter.noise)
+	  # {
+	  #	  stop(paste0("'noise' must be greater than or equal to ", nfilter.noise), call.=FALSE)
+	  # }
+	  # else
+	  # {
+	  #	  percentage <- noise
+	  # }
     
     percentage <- noise
     
