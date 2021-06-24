@@ -105,46 +105,76 @@ plotsurvfitDS<-function(formula = NULL,
     for ( i_temp_counter_inner in c(2:length(survfit_model_variable$surv)) )
     {
       # current value, upper, lower at this index
-      value_temp <- survfit_model_variable$surv[i_temp_counter_inner]
-      upper_temp <- survfit_model_variable$upper[i_temp_counter_inner]
-      lower_temp <- survfit_model_variable$lower[i_temp_counter_inner]
+      # value_temp <- survfit_model_variable$surv[i_temp_counter_inner]
+      # upper_temp <- survfit_model_variable$upper[i_temp_counter_inner]
+      # lower_temp <- survfit_model_variable$lower[i_temp_counter_inner]
       
       # previous value, upper, lower
-      prev_value_temp <- survfit_model_variable$surv[i_temp_counter_inner - 1]
-      prev_upper_temp <- survfit_model_variable$upper[i_temp_counter_inner - 1]
-      prev_lower_temp <- survfit_model_variable$lower[i_temp_counter_inner - 1]
+      # prev_value_temp <- survfit_model_variable$surv[i_temp_counter_inner - 1]
+      # prev_upper_temp <- survfit_model_variable$upper[i_temp_counter_inner - 1]
+      # prev_lower_temp <- survfit_model_variable$lower[i_temp_counter_inner - 1]
       
       # add some noise 
       # can make noise a percentage of previous OR current value
-      # delta_noise <- abs(stats::rnorm(n = 1, mean = value_temp, sd = percentage * value_temp))
-      delta_noise <- stats::rnorm(n = 1, mean = 0, sd = percentage)
+      # # delta_noise <- abs(stats::rnorm(n = 1, mean = value_temp, sd = percentage * value_temp))
+      # delta_noise <- stats::rnorm(n = 1, mean = 0, sd = percentage)
       
       # SUBTRACT this noise from the PREVIOUS VALUE if it does not cause problems with monotonicity
       
-      value_noise = value_temp - delta_noise
-      upper_noise = upper_temp - delta_noise
-      lower_noise = lower_temp - delta_noise
+      # value_noise = value_temp - delta_noise
+      # upper_noise = upper_temp - delta_noise
+      # lower_noise = lower_temp - delta_noise
       
-      if (prev_value_temp >= value_noise)
-      {
-        survfit_model_variable$surv[i_temp_counter_inner] <- value_noise
-        survfit_model_variable$upper[i_temp_counter_inner] <- upper_noise
-        survfit_model_variable$lower[i_temp_counter_inner] <- lower_noise
-      }
-      else
-      {
-        survfit_model_variable$surv[i_temp_counter_inner] = prev_value_temp
-        survfit_model_variable$upper[i_temp_counter_inner] = prev_upper_temp
-        survfit_model_variable$lower[i_temp_counter_inner] = prev_lower_temp
-      }
+      #if (prev_value_temp >= value_noise)
+      #{
+      #  survfit_model_variable$surv[i_temp_counter_inner] <- value_noise
+      #  survfit_model_variable$upper[i_temp_counter_inner] <- upper_noise
+      #  survfit_model_variable$lower[i_temp_counter_inner] <- lower_noise
+      #}
+      #else
+      #{
+      #  survfit_model_variable$surv[i_temp_counter_inner] = prev_value_temp
+      #  survfit_model_variable$upper[i_temp_counter_inner] = prev_upper_temp
+      #  survfit_model_variable$lower[i_temp_counter_inner] = prev_lower_temp
+      #}
       
       # survfit_model_variable$mono[i_temp_counter_inner] = prev_value_temp - survfit_model_variable$surv[i_temp_counter_inner]
       
       # new noise for x axis
-      delta_noise <- stats::rnorm(n = 1, mean = 0, sd = percentage)
-      survfit_model_variable$time[i_temp_counter_inner] <- survfit_model_variable$time[i_temp_counter_inner] - delta_noise
+      # delta_noise <- stats::rnorm(n = 1, mean = 0, sd = percentage)
+      # survfit_model_variable$time[i_temp_counter_inner] <- survfit_model_variable$time[i_temp_counter_inner] - delta_noise
       
+
+      # generate noise
+      delta_noise_time <- abs( stats::rnorm(n = 1, mean = 0, sd = percentage) )
+      # survfit_model_variable$time[i_temp_counter_inner] <- survfit_model_variable$time[i_temp_counter_inner] + delta_noise
+  
+      # previous value time
+      prev_value_temp_time <- survfit_model_variable$time[i_temp_counter_inner - 1]
+      # current value temp time
+      curr_value_temp_time <- survfit_model_variable$time[i_temp_counter_inner]
+      # proposed value of time with noise subtracted
+      value_noise_time_proposed = curr_value_temp_time * (1 + delta_noise_time)
+  
+      if (prev_value_temp_time <= value_noise_time_proposed)
+      {
+          # if previous value time is less then proposed value then ok 
+          # since time is supposed to be increasing
+    
+          # set this value to current time
+          survfit_model_variable$time[i_temp_counter_inner] = value_noise_time_proposed
+    
+      }
+      else
+      {
+           # set to previous time value
+           survfit_model_variable$time[i_temp_counter_inner] = prev_value_temp_time
+      }	    
+	    
+	    
+	    
     }
+    # end for loop	  
     
   }
   
