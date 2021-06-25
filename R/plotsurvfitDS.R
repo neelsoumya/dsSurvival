@@ -57,11 +57,9 @@ plotsurvfitDS<-function(formula = NULL,
   # get survfit model
   survfit_model_variable = eval(parse(text=formula), envir = parent.frame())
   
-  # set method to probabilistic
-  # TODO: make parameters
+  # TODO: make all of these parameters
   method_anonymization = 2
   noise = 0.03 # 0.0003 # 0.03 0.26
-  # TODO: make this a parameter and check if knn is not less than a threshold (see plothistogramDS)	  
   knn <- 20	
   
   ##############################################################
@@ -145,7 +143,7 @@ plotsurvfitDS<-function(formula = NULL,
       # survfit_model_variable$time[i_temp_counter_inner] <- survfit_model_variable$time[i_temp_counter_inner] - delta_noise
       
 
-      # generate noise
+      # generate noise absolute value so alsways positive
       delta_noise_time <- abs( stats::rnorm(n = 1, mean = 0, sd = percentage) )
       # survfit_model_variable$time[i_temp_counter_inner] <- survfit_model_variable$time[i_temp_counter_inner] + delta_noise
   
@@ -153,8 +151,9 @@ plotsurvfitDS<-function(formula = NULL,
       prev_value_temp_time <- survfit_model_variable$time[i_temp_counter_inner - 1]
       # current value temp time
       curr_value_temp_time <- survfit_model_variable$time[i_temp_counter_inner]
-      # proposed value of time with noise subtracted
-      value_noise_time_proposed = curr_value_temp_time * (1 + delta_noise_time)
+      
+      # proposed value of time with noise added as a proportion and added on top of whatever value exists
+      value_noise_time_proposed = curr_value_temp_time + (curr_value_temp_time*delta_noise_time)
   
       if (prev_value_temp_time <= value_noise_time_proposed)
       {
@@ -185,6 +184,12 @@ plotsurvfitDS<-function(formula = NULL,
   if (method_anonymization == 1)
   {
         
+        # TODO: make this a parameter and check if knn is not less than a threshold (see plothistogramDS)	  
+	# if (knn < 5)
+        # {
+        #      stop(paste0("'knn' must be greater than or equal to ", 5), call.=FALSE)  # nfilter.noise
+        # }	  
+	  
         # Step 1: Standardise the variable
         time.standardised <- (survfit_model_variable$time-mean(survfit_model_variable$time))/stats::sd(survfit_model_variable$time)
 
