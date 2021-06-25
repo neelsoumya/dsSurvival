@@ -7,10 +7,10 @@
 #' This request is not disclosive as it is randomized.
 #' For further details see help for {ds.plotsurvfit} function.
 #' @param formula a character string which has the name of server-side survfit() object.
-#'		This should be created using ds.survfit()
+#'		This should be created using a call to ds.survfit()
 #' @param dataName character string of name of data frame
 #' @return a privacy preserving survival curve from the server side environment.
-#' @author Soumya Banerjee, Tom Bishop, Demetris Avraam, Paul Burton and DataSHIELD technical team (2021).
+#' @author Soumya Banerjee, Demetris Avraam, Paul Burton and Tom Bishop (2021).
 #' @export
 plotsurvfitDS<-function(formula = NULL,
                         dataName = NULL
