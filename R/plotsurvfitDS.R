@@ -144,7 +144,9 @@ plotsurvfitDS<-function(formula = NULL,
       
 
       # generate noise absolute value so alsways positive
-      delta_noise_time <- abs( stats::rnorm(n = 1, mean = 0, sd = percentage) )
+      # delta_noise_time <- abs( stats::rnorm(n = 1, mean = 0, sd = percentage) )
+      # do not take absolute value but have it reject values if not monotonically increasing
+      delta_noise_time <- stats::rnorm(n = 1, mean = 0, sd = percentage)	    
       # survfit_model_variable$time[i_temp_counter_inner] <- survfit_model_variable$time[i_temp_counter_inner] + delta_noise
   
       # previous value time
