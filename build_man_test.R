@@ -21,6 +21,11 @@ require('DSOpal')
 ##################
 devtools::build_manual()
 
+########################
+# update documentation
+########################
+devtools::check_man()
+
 ##################
 # build vignettes
 ##################
