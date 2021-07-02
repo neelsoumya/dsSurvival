@@ -67,10 +67,9 @@ plotsurvfitDS<-function(formula = NULL,
   # get survfit model
   survfit_model_variable = eval(parse(text=formula), envir = parent.frame())
   
-  # TODO: make all of these parameters
-  method_anonymization = 2
-  noise = 0.03 # 0.0003 # 0.03 0.26
-  knn <- 20	
+  # method_anonymization = 2
+  # noise = 0.03 # 0.0003 # 0.03 0.26
+  # knn <- 20	
   
   ##############################################################
   # if probabilistic anonymization then generate and add noise	
