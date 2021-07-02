@@ -9,11 +9,18 @@
 #' @param formula a character string which has the name of server-side survfit() object.
 #'		This should be created using a call to ds.survfit()
 #' @param dataName character string of name of data frame
+#' @param method_anonymization an integer. Method of anonymization to be used (1: deterministic, 2: probabilistic). Default value is 2.
+#' @param noise an integer. fraction of noise (between 0 and 1) to be added to original data. Noise is added as a percentage of original value. 
+#'     This is used for probabilistic anonymization.
+#' @param knn an integer. Number of nearest neighbours to be used for k nearest neighbours algoithm (for determinstic anonymization). Default value is 20.
 #' @return a privacy preserving survival curve from the server side environment.
 #' @author Soumya Banerjee, Demetris Avraam, Paul Burton and Tom Bishop (2021).
 #' @export
 plotsurvfitDS<-function(formula = NULL,
-                        dataName = NULL
+                        dataName = NULL,
+			method_anonymization = 2,
+			noise = 0.03,
+			knn = 20
                        )
 {
   
