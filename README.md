@@ -1,6 +1,6 @@
 # dsSurvival
 
-Survival functions for DataSHIELD (a platform for federated analysis of private data). These are server side functions for survival models, Cox proportional hazards models and Cox regression models.
+This is a package for building survival functions for DataSHIELD (a platform for federated analysis of private data). These are server side functions for survival models, Cox proportional hazards models and Cox regression models.
 
 This is a standalone bolt-on package for survival analysis in DataSHIELD.
 
