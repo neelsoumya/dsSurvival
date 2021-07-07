@@ -18,7 +18,6 @@ install.packages('devtools')
 library(devtools)
 	
 devtools::install_github('neelsoumya/dsBaseClient')
-	
    
 devtools::install_github('neelsoumya/dsSurvivalClient')
 		    
