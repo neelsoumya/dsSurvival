@@ -1,5 +1,5 @@
 ###########################################
-# Script to build manuals and test
+# Script to build manuals and test code
 #
 # Usage:
 #   R --no-save < build_man_test.R
