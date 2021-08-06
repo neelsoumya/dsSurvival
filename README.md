@@ -37,6 +37,10 @@ DataSHIELD is a platform for federated analysis of private data. DataSHIELD has 
 
 ![Screenshot of installation of package in VM](Capture_VM_install_screenshot.PNG)
 
+If you have an older version of Opal, please use this version by Stuart Wheater
+
+https://github.com/StuartWheater/dsSurvival
+
 ```
 
 install.packages('devtools')
