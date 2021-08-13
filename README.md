@@ -77,6 +77,12 @@ devtools::install_github('neelsoumya/dsSurvivalClient', ref = 'privacy_survival_
 
 ## Usage
 
+
+A tutorial in bookdown format is available here: 
+
+https://neelsoumya.github.io/dsSurvival\_bookdown/
+
+
 * see vignettes and tutorials below
 
 * https://github.com/neelsoumya/dsSurvivalClient/blob/main/vignettes/development_plan.rmd
