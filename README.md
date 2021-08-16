@@ -80,7 +80,8 @@ devtools::install_github('neelsoumya/dsSurvivalClient', ref = 'privacy_survival_
 
 A tutorial in bookdown format is available here: 
 
-https://neelsoumya.github.io/dsSurvival\_bookdown/
+https://neelsoumya.github.io/dsSurvival_bookdown/
+
 
 
 * see vignettes and tutorials below
@@ -93,6 +94,7 @@ https://neelsoumya.github.io/dsSurvival\_bookdown/
 A screenshot of meta-analyzed hazard ratios from a survival model is shown below.
 
 ![A screenshot of meta-analyzed hazard ratios from the survival model is shown below](screenshot_survival_models.png)
+
 
 
 ## Release notes
