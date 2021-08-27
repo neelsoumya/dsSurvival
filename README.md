@@ -135,3 +135,7 @@ We are especially grateful to Elaine Smith, Stuart Wheater, Yannick Marcon, Paul
 If you use the code, please cite the following DOI
 
 [![DOI](https://zenodo.org/badge/362161587.svg)](https://zenodo.org/badge/latestdoi/362161587)
+
+or see the CITATION.cff file created using
+
+https://citation-file-format.github.io/cff-initializer-javascript/
