@@ -110,7 +110,7 @@ We are especially grateful to Elaine Smith, Stuart Wheater, Yannick Marcon, Paul
 
 ## Contact
 
-* Soumya Banerjee, Demetris Avraam, Paul Burton, Xavier Escriba Montagut, Juan Gonzalez, Tom R P Bishop and DataSHIELD technical team
+* Soumya Banerjee, Demetris Avraam, Paul Burton, Xavier Escriba Montagut, Juan Gonzalez, Tom R. P. Bishop and DataSHIELD technical team
 
 * sb2333@cam.ac.uk
 
