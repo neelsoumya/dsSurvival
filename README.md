@@ -4,7 +4,7 @@
 
 This is a package for building survival functions for DataSHIELD (a platform for federated analysis of private data). These are server side functions for survival models, Cox proportional hazards models and Cox regression models.
 
-This is a standalone bolt-on package for survival analysis in DataSHIELD.
+This is a standalone package for survival analysis in DataSHIELD.
 
 DataSHIELD is a platform for federated analysis of private data. DataSHIELD has a client-server architecture and this package has a client side and server side component.
 
