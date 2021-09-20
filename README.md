@@ -125,7 +125,8 @@ We are especially grateful to Elaine Smith, Stuart Wheater, Yannick Marcon, Paul
 
 If you use the code, please cite the following DOI
 
-[![DOI](https://zenodo.org/badge/4806871.svg)](https://zenodo.org/badge/latestdoi/4806871)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4917552.svg)](https://doi.org/10.5281/zenodo.4917552)
+
 
 or see the CITATION.cff file created using
 
