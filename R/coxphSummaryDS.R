@@ -13,7 +13,7 @@
 #'	hazards model saved in the server-side.
 #' @return summary of the Cox proportional hazards 
 #'	from the server side environment.
-#' @author Soumya Banerjee and Tom Bishop (2020).
+#' @author Soumya Banerjee and Tom R. P. Bishop (2020).
 #' @export
 coxphSummaryDS<-function(x = NULL
                         )
