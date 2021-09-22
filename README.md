@@ -82,7 +82,7 @@ https://neelsoumya.github.io/dsSurvival_bookdown/
 
 
 
-A screenshot of meta-analyzed hazard ratios from a survival model is shown below.
+A screenshot of the meta-analyzed hazard ratios from a survival model is shown below.
 
 ![A screenshot of meta-analyzed hazard ratios from the survival model is shown below](screenshot_survival_models.png)
 
