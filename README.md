@@ -17,6 +17,13 @@ DataSHIELD is a platform for federated analysis of private data. DataSHIELD has 
     * https://github.com/neelsoumya/dsSurvival
 
 
+
+A tutorial in bookdown format with executable code is available here:
+
+https://neelsoumya.github.io/dsSurvival_bookdown/
+
+
+
 ## Installation
 
 
