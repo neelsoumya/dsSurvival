@@ -23,6 +23,36 @@ A tutorial in bookdown format with executable code is available here:
 https://neelsoumya.github.io/dsSurvival_bookdown/
 
 
+## Quick start
+
+Please install R. Then install R Studio 
+
+   https://www.rstudio.com/products/rstudio/download/preview/
+
+
+Install the following packages:
+
+
+```{r eval=FALSE}
+install.packages('devtools')
+library(devtools)
+devtools::install_github('neelsoumya/dsSurvivalClient')
+devtools::install_github('datashield/dsBaseClient@6.1.1')
+install.packages('rmarkdown')
+install.packages('knitr')
+install.packages('tinytex')
+install.packages('metafor')
+install.packages('DSOpal')
+install.packages('DSI')
+install.packages('opalr')
+```
+
+
+Follow the tutorial in bookdown format with executable code:
+
+https://neelsoumya.github.io/dsSurvival_bookdown/
+
+
 
 ## Installation
 
