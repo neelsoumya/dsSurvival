@@ -27,7 +27,7 @@ DataSHIELD is a platform for federated analysis of private data. DataSHIELD has 
 
 ## Quick start
 
-Please install R. Then install R Studio 
+Please install R and R Studio 
 
    https://www.rstudio.com/products/rstudio/download/preview/
 
