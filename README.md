@@ -137,6 +137,8 @@ A shiny graphical user interface for building survival models in DataSHIELD has 
 
 * https://github.com/isglobal-brge/ShinyDataSHIELD
 
+* https://isglobal-brge.github.io/ShinyDataSHIELD_bookdown/
+
 
 v2.0.0: Forthcoming. This will have privacy preserving survival curves.
 
