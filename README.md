@@ -102,7 +102,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient@v1.0.0')
 
 ```
 
-If you want to try privacy preserving survival curves (work in progress and to be available in v1.1.0), then you can do the following
+If you want to try privacy preserving survival curves (work in progress and to be available in v2.0), then you can do the following
 
 ```
 
