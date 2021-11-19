@@ -143,6 +143,8 @@ A shiny graphical user interface for building survival models in DataSHIELD has 
 
 * https://isglobal-brge.github.io/ShinyDataSHIELD_bookdown/
 
+* https://isglobal-brge.github.io/ShinyDataSHIELD_bookdown/functionalities.html#survival-analysis
+
 * https://datashield-demo.obiba.org/
 
 
