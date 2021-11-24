@@ -60,10 +60,7 @@ plotsurvfitDS<-function(formula = NULL,
     stop("The formula must be set for use in survival::coxph()", call.=FALSE)
   }
   
-  ###########################
-  # disclosure checks
-  ###########################
-  
+
   # get survfit model
   survfit_model_variable = eval(parse(text=formula), envir = parent.frame())
   
