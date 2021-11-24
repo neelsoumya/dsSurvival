@@ -24,7 +24,7 @@ DataSHIELD is a platform for federated analysis of private data. DataSHIELD has 
 
 ## Quick start
 
-* Please install R 
+* Install R 
 
    https://www.r-project.org/
 
@@ -33,7 +33,7 @@ and R Studio
    https://www.rstudio.com/products/rstudio/download/preview/
 
 
-* Install the following packages:
+* Install the following packages in R:
 
 
 ```{r eval=FALSE}
@@ -51,7 +51,7 @@ install.packages('opalr')
 ```
 
 
-* Follow the tutorial in bookdown format with executable code:
+* Follow the tutorial in bookdown format with executable code and synthetic data:
 
 https://neelsoumya.github.io/dsSurvival_bookdown/
 
