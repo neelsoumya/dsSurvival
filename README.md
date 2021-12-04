@@ -177,3 +177,6 @@ If you use the code, please cite the following DOI
 or see the CITATION.cff file created using
 
 https://citation-file-format.github.io/cff-initializer-javascript/
+
+
+[![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
