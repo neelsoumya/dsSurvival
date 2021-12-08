@@ -38,7 +38,7 @@ and R Studio
 * Install the following packages in R:
 
 
-```{r eval=FALSE}
+```r 
 install.packages('devtools')
 library(devtools)
 devtools::install_github('neelsoumya/dsSurvivalClient')
@@ -83,7 +83,7 @@ If you have an older version of Opal, please use this version by Stuart Wheater
 
 https://github.com/StuartWheater/dsSurvival
 
-```
+```r
 
 install.packages('devtools')
 
@@ -97,7 +97,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient')
 
 If you want to use a certain release then you can do the following
 
-```
+```r
 
 library(devtools)
 
@@ -107,7 +107,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient@v1.0.0')
 
 If you want to try privacy preserving survival curves (work in progress and to be available in v2.0), then you can do the following
 
-```
+```r
 
 library(devtools)
 
