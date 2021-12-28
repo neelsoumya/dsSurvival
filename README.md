@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This is a standalone package for building survival functions for DataSHIELD (a platform for federated analysis of private data). These are server side functions for survival models, Cox proportional hazards models and Cox regression models.
+`dsSurvival` is a package for building survival functions for DataSHIELD (a platform for federated analysis of private data). These are server side functions for survival models, Cox proportional hazards models and Cox regression models.
 
 A tutorial in bookdown format with executable code is available here:
 
@@ -13,11 +13,11 @@ https://neelsoumya.github.io/dsSurvival_bookdown/
 
 DataSHIELD is a platform for federated analysis of private data. DataSHIELD has a client-server architecture and this package has a client side and server side component.
 
-* The client side package is called dsSurvivalClient:
+* The client side package is called `dsSurvivalClient`:
 
     * https://github.com/neelsoumya/dsSurvivalClient
 
-* The server side package is called dsSurvival:
+* The server side package is called `dsSurvival`:
 
     * https://github.com/neelsoumya/dsSurvival
 
