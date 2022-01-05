@@ -57,6 +57,9 @@ install.packages('opalr')
 
 https://neelsoumya.github.io/dsSurvival_bookdown/
 
+This uses the Opal demo server which has all server-side packages preinstalled
+
+https://opal-sandbox.mrc-epid.cam.ac.uk/
 
 
 ## Installation
@@ -78,6 +81,11 @@ https://neelsoumya.github.io/dsSurvival_bookdown/
 * Install dsBase and dsSurvival on Opal server in the Virtual Machine (type neelsoumya/dsSurvival and main in the textboxes) as shown in the screenshot below
 
 ![Screenshot of installation of package in VM](Capture_VM_install_screenshot.PNG)
+
+See the link below on how to install a package in Opal
+
+https://opaldoc.obiba.org/en/latest/web-user-guide/administration/datashield.html#add-package
+
 
 If you have an older version of Opal, please use this version by Stuart Wheater
 
