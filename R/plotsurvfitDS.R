@@ -93,12 +93,11 @@ plotsurvfitDS<-function(formula = NULL,
     #	  percentage <- noise
     # }
     
-    percentage <- noise
-    # TODO: handle when noise = 0 use nfilter.noise
-    # TODO: method  = 1 should come first
+    percentage <- noise	  
+    # TODO: handle when noise = 0 use nfilter.noise see code above
     # TODO: tidy up the code and move experimental code to another branch
     # TODO: is it failure time or time, add noise to both (maybe have parameter to do both)
-    # TODO: discuss this in ms dsSurvival 2.0 another level of precaution	  
+    # TODO: discuss the above in ms dsSurvival 2.0 another level of precaution	  
 	  
     
     ##########################################
