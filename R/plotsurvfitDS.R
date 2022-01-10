@@ -93,8 +93,18 @@ plotsurvfitDS<-function(formula = NULL,
     #	  percentage <- noise
     # }
     
-    percentage <- noise	  
-    # TODO: handle when noise = 0 use nfilter.noise see code above
+	  
+    # check if percentage of noise greater than threshold   	  
+    f_noise_threshold = 0.001	  
+    if (noise < f_noise_threshold)
+    {
+	 stop( paste0(" 'noise' must be greater than or equal to ", f_noise_threshold),   call.=FALSE ) 
+    }
+    else
+    {
+	 percentage <- noise   
+    }	    
+	  
     # TODO: handle kNN less than threshold in deterministic section	  
     # TODO: tidy up the code and move experimental code to another branch
     # TODO: is it failure time or time, add noise to both (maybe have parameter to do both)
