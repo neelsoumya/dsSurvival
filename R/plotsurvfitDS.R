@@ -40,7 +40,7 @@ plotsurvfitDS<-function(formula = NULL,
   nfilter.glm    <- as.numeric(thr$nfilter.glm)                           #
   nfilter.noise  <- as.numeric(thr$nfilter.noise)                         #
   #nfilter.stringShort<-as.numeric(thr$nfilter.stringShort)               #
-  #nfilter.kNN<-as.numeric(thr$nfilter.kNN)                               #
+  #nfilter.kNN <- as.numeric(thr$nfilter.kNN)                             #
   #datashield.privacyLevel<-as.numeric(thr$datashield.privacyLevel)       #
   #########################################################################
   
@@ -95,6 +95,7 @@ plotsurvfitDS<-function(formula = NULL,
     
     percentage <- noise	  
     # TODO: handle when noise = 0 use nfilter.noise see code above
+    # TODO: handle kNN less than threshold in deterministic section	  
     # TODO: tidy up the code and move experimental code to another branch
     # TODO: is it failure time or time, add noise to both (maybe have parameter to do both)
     # TODO: discuss the above in ms dsSurvival 2.0 another level of precaution	  
