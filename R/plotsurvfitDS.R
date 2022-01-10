@@ -17,7 +17,7 @@
 #' @param knn an integer. Number of nearest neighbours to be used for k nearest neighbours algoithm (for determinstic anonymization). 
 #'     Default value is 20.
 #' @return a privacy preserving survival curve from the server side environment.
-#' @author Soumya Banerjee, Demetris Avraam, Paul Burton and Tom RP Bishop (2021).
+#' @author Soumya Banerjee, Demetris Avraam, Paul Burton and Tom RP Bishop (2022).
 #' @export
 plotsurvfitDS<-function(formula = NULL,
                         dataName = NULL,
