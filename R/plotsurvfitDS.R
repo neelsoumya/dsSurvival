@@ -64,7 +64,6 @@ plotsurvfitDS<-function(formula = NULL,
   # get survfit model
   survfit_model_variable = eval(parse(text=formula), envir = parent.frame())
   
-  # method_anonymization = 2
   # noise = 0.03 # 0.0003 # 0.03 0.26
   # knn <- 20	
   
@@ -189,6 +188,7 @@ plotsurvfitDS<-function(formula = NULL,
     # end for loop	  
     
   }
+  # end if	
   
   ######################################################################
   # Approach 2: 
@@ -230,7 +230,7 @@ plotsurvfitDS<-function(formula = NULL,
 	  
 	  
   }  
-    
+  # end if  
 
   # return modified survfit object
   return(survfit_model_variable)
