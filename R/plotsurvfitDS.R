@@ -207,7 +207,7 @@ plotsurvfitDS<-function(formula = NULL,
   if (method_anonymization == 1)
   {
         
-        # TODO: make this a parameter and check if knn is not less than a threshold (see plothistogramDS) uncomment lines in beginning of function and below	  
+        # check if knn is not less than a threshold (see plothistogramDS) uncomment lines in beginning of function and below	  
 	if (knn < nfilter.kNN)
         {
               stop(paste0("'knn' must be greater than or equal to ", nfilter.kNN), call.=FALSE)  # nfilter.noise
