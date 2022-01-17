@@ -40,7 +40,7 @@ plotsurvfitDS<-function(formula = NULL,
   nfilter.glm    <- as.numeric(thr$nfilter.glm)                           #
   nfilter.noise  <- as.numeric(thr$nfilter.noise)                         #
   #nfilter.stringShort<-as.numeric(thr$nfilter.stringShort)               #
-  nfilter.kNN <- as.numeric(thr$nfilter.kNN)                              #
+  nfilter.kNN    <- as.numeric(thr$nfilter.kNN)                           #
   #datashield.privacyLevel<-as.numeric(thr$datashield.privacyLevel)       #
   #########################################################################
   
@@ -207,11 +207,11 @@ plotsurvfitDS<-function(formula = NULL,
   if (method_anonymization == 1)
   {
         
-        # TODO: make this a parameter and check if knn is not less than a threshold (see plothistogramDS) uncomment lines in beginning og function and below	  
-	# if (knn < nfilter.kNN)
-        # {
-        #      stop(paste0("'knn' must be greater than or equal to ", nfilter.kNN), call.=FALSE)  # nfilter.noise
-        # }	  
+        # TODO: make this a parameter and check if knn is not less than a threshold (see plothistogramDS) uncomment lines in beginning of function and below	  
+	if (knn < nfilter.kNN)
+        {
+              stop(paste0("'knn' must be greater than or equal to ", nfilter.kNN), call.=FALSE)  # nfilter.noise
+        }	  
 	  
         # Step 1: Standardise the variable
         time.standardised <- (survfit_model_variable$time-mean(survfit_model_variable$time))/stats::sd(survfit_model_variable$time)
