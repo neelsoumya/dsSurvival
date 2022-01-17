@@ -105,7 +105,7 @@ plotsurvfitDS<-function(formula = NULL,
 	 percentage <- noise   
     }	    
 	  
-    # TODO: handle kNN less than threshold in deterministic section	  
+	  
     # TODO: tidy up the code and move experimental code to another branch
     # TODO: is it failure time or time, add noise to both (maybe have parameter to do both)
     # TODO: discuss the above in ms dsSurvival 2.0 another level of precaution	  
@@ -207,7 +207,7 @@ plotsurvfitDS<-function(formula = NULL,
   if (method_anonymization == 1)
   {
         
-        # check if knn is not less than a threshold (see plothistogramDS) uncomment lines in beginning of function and below	  
+        # check if knn is not less than a threshold (see plothistogramDS) 	  
 	if (knn < nfilter.kNN)
         {
               stop(paste0("'knn' must be greater than or equal to ", nfilter.kNN), call.=FALSE)  # nfilter.noise
