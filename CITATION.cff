@@ -9,7 +9,7 @@ authors:
     family-names: Bishop
     given-names: Tom
 cff-version: "1.0.0"
-doi: "10.5281/zenodo.4806871"
+doi: "10.1101/2022.01.04.471418"
 message: "If you use this software, please cite it using these metadata."
-title: "neelsoumya/dsSurvival: v1.0.0 Survival models in DataSHIELD"
+title: "dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD"
 ...
