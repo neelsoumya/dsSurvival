@@ -189,7 +189,7 @@ or see the CITATION.cff file created using
 https://citation-file-format.github.io/cff-initializer-javascript/
 
 
-and the following
+and the following manuscript
 
 dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD
 
