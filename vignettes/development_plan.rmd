@@ -483,6 +483,8 @@ dsSurvivalClient::ds.survfit(formula='surv_object~1', objectname='survfit_object
 
 dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object')
 
+# dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object', method_anonymization = 1, knn = 20)
+
 ```
 
 \newpage
