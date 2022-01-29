@@ -179,7 +179,17 @@ We are especially grateful to Elaine Smith, Stuart Wheater, Yannick Marcon, Paul
 
 ## Citation
 
-If you use the code, please cite the following DOI
+If you use the code, please cite the following manuscript
+
+dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD
+
+https://www.biorxiv.org/content/10.1101/2022.01.04.471418v2
+
+https://doi.org/10.1101/2022.01.04.471418 
+
+
+
+and the following DOI
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4917552.svg)](https://doi.org/10.5281/zenodo.4917552)
 
@@ -188,12 +198,4 @@ or see the CITATION.cff file created using
 
 https://citation-file-format.github.io/cff-initializer-javascript/
 
-
-and the following manuscript
-
-dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD
-
-https://www.biorxiv.org/content/10.1101/2022.01.04.471418v2
-
-https://doi.org/10.1101/2022.01.04.471418 
 
