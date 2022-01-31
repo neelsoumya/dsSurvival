@@ -42,5 +42,5 @@ This request is not disclosive as it is randomized.
 For further details see help for {ds.plotsurvfit} function.
 }
 \author{
-Soumya Banerjee, Demetris Avraam, Paul Burton and Tom R P Bishop (2021).
+Soumya Banerjee, Demetris Avraam, Paul Burton and Tom RP Bishop (2022).
 }

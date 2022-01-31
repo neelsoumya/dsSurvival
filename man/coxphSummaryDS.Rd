@@ -28,5 +28,5 @@ This request is not disclosive as it only returns summary statistics.
 For further details see help for {ds.coxphSummary} function.
 }
 \author{
-Soumya Banerjee and Tom Bishop (2020).
+Soumya Banerjee and Tom R. P. Bishop (2020).
 }
