@@ -64,8 +64,6 @@ plotsurvfitDS<-function(formula = NULL,
   # get survfit model
   survfit_model_variable = eval(parse(text=formula), envir = parent.frame())
   
-  # noise = 0.03 # 0.0003 # 0.03 0.26
-  # knn <- 20	
   
   ##############################################################
   # if probabilistic anonymization then generate and add noise	
@@ -83,16 +81,6 @@ plotsurvfitDS<-function(formula = NULL,
     # if there is a seed, then set it
     set.seed(seed)	
     
-    # TODO: check if percentage of noise greater than threshold
-    # if(noise < nfilter.noise)
-    # {
-    #	  stop(paste0("'noise' must be greater than or equal to ", nfilter.noise), call.=FALSE)
-    # }
-    # else
-    # {
-    #	  percentage <- noise
-    # }
-    
 	  
     # check if percentage of noise greater than threshold   	  
     f_noise_threshold = 0.001	  
@@ -106,10 +94,6 @@ plotsurvfitDS<-function(formula = NULL,
     }	    
 	  
 	  
-    # TODO: tidy up the code and move experimental code to another branch
-    # TODO: is it failure time or time, add noise to both (maybe have parameter to do both)
-    # TODO: discuss the above in ms dsSurvival 2.0 another level of precaution	  
-	  
     
     ##########################################
     # Approach 1: add noise before plotting
@@ -122,47 +106,7 @@ plotsurvfitDS<-function(formula = NULL,
     ##########################################
     for ( i_temp_counter_inner in c(2:length(survfit_model_variable$surv)) )
     {
-	      # current value, upper, lower at this index
-	      # value_temp <- survfit_model_variable$surv[i_temp_counter_inner]
-	      # upper_temp <- survfit_model_variable$upper[i_temp_counter_inner]
-	      # lower_temp <- survfit_model_variable$lower[i_temp_counter_inner]
-
-	      # previous value, upper, lower
-	      # prev_value_temp <- survfit_model_variable$surv[i_temp_counter_inner - 1]
-	      # prev_upper_temp <- survfit_model_variable$upper[i_temp_counter_inner - 1]
-	      # prev_lower_temp <- survfit_model_variable$lower[i_temp_counter_inner - 1]
-
-	      # add some noise 
-	      # can make noise a percentage of previous OR current value
-	      # # delta_noise <- abs(stats::rnorm(n = 1, mean = value_temp, sd = percentage * value_temp))
-	      # delta_noise <- stats::rnorm(n = 1, mean = 0, sd = percentage)
-
-	      # SUBTRACT this noise from the PREVIOUS VALUE if it does not cause problems with monotonicity
-
-	      # value_noise = value_temp - delta_noise
-	      # upper_noise = upper_temp - delta_noise
-	      # lower_noise = lower_temp - delta_noise
-
-	      #if (prev_value_temp >= value_noise)
-	      #{
-	      #  survfit_model_variable$surv[i_temp_counter_inner] <- value_noise
-	      #  survfit_model_variable$upper[i_temp_counter_inner] <- upper_noise
-	      #  survfit_model_variable$lower[i_temp_counter_inner] <- lower_noise
-	      #}
-	      #else
-	      #{
-	      #  survfit_model_variable$surv[i_temp_counter_inner] = prev_value_temp
-	      #  survfit_model_variable$upper[i_temp_counter_inner] = prev_upper_temp
-	      #  survfit_model_variable$lower[i_temp_counter_inner] = prev_lower_temp
-	      #}
-
-	      # survfit_model_variable$mono[i_temp_counter_inner] = prev_value_temp - survfit_model_variable$surv[i_temp_counter_inner]
-
-	      # new noise for x axis
-	      # delta_noise <- stats::rnorm(n = 1, mean = 0, sd = percentage)
-	      # survfit_model_variable$time[i_temp_counter_inner] <- survfit_model_variable$time[i_temp_counter_inner] - delta_noise
-
-
+	      
 	      # generate noise absolute value so alsways positive
 	      # delta_noise_time <- abs( stats::rnorm(n = 1, mean = 0, sd = percentage) )
 	      # do not take absolute value but have it reject values if not monotonically increasing
