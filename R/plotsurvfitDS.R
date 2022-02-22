@@ -93,7 +93,6 @@ plotsurvfitDS<-function(formula = NULL,
 	 percentage <- noise   
     }	    
 	  
-	  
     
     ##########################################
     # Approach 1: add noise before plotting
@@ -181,7 +180,13 @@ plotsurvfitDS<-function(formula = NULL,
 
         # modify time in survfit object (instead of original time)
         survfit_model_variable$time <- SURVTIME_anon
-	  
+	 
+        # if time needs adjustment, if min is less than 0 for example
+        #  then adjust and translate time  
+	if ( min(survfit_model_variable$time) < 0 )
+	{
+	    survfit_model_variable$time = survfit_model_variable$time - min(survfit_model_variable$time) 	
+	}	
 	  
   }  
   # end if  
