@@ -197,7 +197,7 @@ plotsurvfitDS<-function(formula = NULL,
   ####################################
   #if (method_anonymization == 3) 	
   #{
-  #    f_span = 0.10	  
+  #    f_span = 0.10	 # TODO: make it depend on number of data points 
   #    smoothed_survfit = stats::loess(survfit_model_variable$surv ~ survfit_model_variable$time, span = f_span)	
   #    survfit_model_variable$surv = smoothed_survfit
   #}
