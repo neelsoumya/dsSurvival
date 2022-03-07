@@ -191,18 +191,23 @@ plotsurvfitDS<-function(formula = NULL,
   }  
   # end if  
 	
+	
   ####################################
   # Approach 3:	
   # Smoothing option
   ####################################
   #if (method_anonymization == 3) 	
   #{
-  #    f_span = 0.10	 # TODO: make it depend on number of data points 
+  #    # TODO: make it depend on number of data points 	
+  #    f_span = 0.10	 
   #    smoothed_survfit = stats::loess(survfit_model_variable$surv ~ survfit_model_variable$time, span = f_span)	
+  #    
+  #    TODO: modify last point and make sure not negative and not greater than previous point	
   #    survfit_model_variable$surv = smoothed_survfit
   #}
   # end if  	
 
+	
   # return modified survfit object
   return(survfit_model_variable)
 
