@@ -202,8 +202,11 @@ plotsurvfitDS<-function(formula = NULL,
   #    f_span = 0.30	 # useable span 0.3-0.55
   #    smoothed_survfit = stats::loess(survfit_model_variable$surv ~ survfit_model_variable$time, span = f_span)	
   #    
-  #    TODO: modify last point and make sure not negative and not greater than previous point	
-  #    survfit_model_variable$surv = smoothed_survfit
+  #    # predict
+  #    predict_smoothed_survfit = stats::predict(smoothed_survfit)  	
+  #    # TODO: modify last point and make sure not negative and not greater than previous point	
+  #    # assign to surv variable the smoothed data	
+  #    survfit_model_variable$surv = predict_smoothed_survfit
   #}
   # end if  	
 
