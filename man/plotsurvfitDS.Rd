@@ -7,7 +7,7 @@
 plotsurvfitDS(
   formula = NULL,
   dataName = NULL,
-  method_anonymization = 2,
+  method_anonymization = 3,
   noise = 0.03,
   knn = 20
 )
@@ -18,7 +18,7 @@ This should be created using a call to ds.survfit()}
 
 \item{dataName}{character string of name of data frame}
 
-\item{method_anonymization}{an integer. Method of anonymization to be used (1: deterministic, 2: probabilistic). Default value is 2.}
+\item{method_anonymization}{an integer. Method of anonymization to be used (3: smoothing). Default value is 3.}
 
 \item{noise}{an integer. fraction of noise (between 0 and 1) to be added to original data. 
 Noise is added as a percentage of original value. 
