@@ -14,7 +14,7 @@
 #'     Noise is added as a percentage of original value. 
 #'     This is used for probabilistic anonymization.
 #'     Default value is 0.03 
-#' @param knn an integer. Number of nearest neighbours to be used for k nearest neighbours algoithm (for determinstic anonymization). 
+#' @param knn an integer. Number of nearest neighbours to be used for k nearest neighbours algorithm (for determinstic anonymization). 
 #'     Default value is 20.
 #' @return a privacy preserving survival curve from the server side environment.
 #' @author Soumya Banerjee, Demetris Avraam, Paul Burton and Tom RP Bishop (2022).
@@ -31,16 +31,16 @@ plotsurvfitDS<-function(formula = NULL,
   
   #########################################################################
   # DataSHIELD MODULE: CAPTURE THE nfilter SETTINGS                       #
-  thr <- listDisclosureSettingsDS()                                       #
+  # thr <- listDisclosureSettingsDS()                                     #
   #nfilter.tab<-as.numeric(thr$nfilter.tab)                               #
   #nfilter.glm<-as.numeric(thr$nfilter.glm)                               #
   #nfilter.subset<-as.numeric(thr$nfilter.subset)                         #
-  nfilter.string <- as.numeric(thr$nfilter.string)                        #
-  nfilter.tab    <- as.numeric(thr$nfilter.tab)                           #
-  nfilter.glm    <- as.numeric(thr$nfilter.glm)                           #
-  nfilter.noise  <- as.numeric(thr$nfilter.noise)                         #
+  # nfilter.string <- as.numeric(thr$nfilter.string)                      #
+  #nfilter.tab    <- as.numeric(thr$nfilter.tab)                          #
+  #nfiter.glm    <- as.numeric(thr$nfilter.glm)                           #
+  #nfilter.noise  <- as.numeric(thr$nfilter.noise)                        #
   #nfilter.stringShort<-as.numeric(thr$nfilter.stringShort)               #
-  nfilter.kNN    <- as.numeric(thr$nfilter.kNN)                           #
+  #nfilter.kNN    <- as.numeric(thr$nfilter.kNN)                          #
   #datashield.privacyLevel<-as.numeric(thr$datashield.privacyLevel)       #
   #########################################################################
   
