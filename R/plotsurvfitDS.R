@@ -9,21 +9,14 @@
 #' @param formula a character string which has the name of server-side survfit() object.
 #'		This should be created using a call to ds.survfit()
 #' @param dataName character string of name of data frame
-#' @param method_anonymization an integer. Method of anonymization to be used (3: smoothing). Default value is 3.
-#' @param noise an integer. fraction of noise (between 0 and 1) to be added to original data. 
-#'     Noise is added as a percentage of original value. 
-#'     This is used for probabilistic anonymization.
-#'     Default value is 0.03 
-#' @param knn an integer. Number of nearest neighbours to be used for k nearest neighbours algorithm (for determinstic anonymization). 
-#'     Default value is 20.
 #' @return a privacy preserving survival curve from the server side environment.
 #' @author Soumya Banerjee, Demetris Avraam, Paul Burton and Tom RP Bishop (2022).
 #' @export
 plotsurvfitDS<-function(formula = NULL,
-                        dataName = NULL,
-			method_anonymization = 3,
-			noise = 0.03,
-			knn = 20
+                        dataName = NULL #,
+			# method_anonymization = 3,
+			# noise = 0.03,
+			# knn = 20
                        )
 {
   
@@ -71,8 +64,8 @@ plotsurvfitDS<-function(formula = NULL,
   #  using LOESS
   #   (Locally Weighted Scatterplot Smoothing)	
   ################################################
-  if (method_anonymization == 3) 	
-  {
+  # if (method_anonymization == 3) 	
+  # {
       # TODO: make it depend on number of data points on X axis 	
       f_span = 0.30	 # useable span 0.3-0.55
       smoothed_survfit = stats::loess(survfit_model_variable$surv ~ survfit_model_variable$time, span = f_span)	
@@ -82,8 +75,9 @@ plotsurvfitDS<-function(formula = NULL,
 	  
       # TODO: modify last point and make sure not negative and not greater than previous point	
       # assign to surv variable the smoothed data	
+      # TODO: use automated way to determine span loess.as() in fANCOVA package 	
       survfit_model_variable$surv = predict_smoothed_survfit
-  }
+  # }
   # end if  	
 
 	
