@@ -67,19 +67,28 @@ plotsurvfitDS<-function(formula = NULL,
   # if (method_anonymization == 3) 	
   # {
       # TODO: make it depend on number of data points on X axis 	
-      f_span = 0.30	 # useable span 0.3-0.55
-      smoothed_survfit = stats::loess(survfit_model_variable$surv ~ survfit_model_variable$time, span = f_span)	
+      # f_span = 0.30	 # useable span 0.3-0.55
+      # smoothed_survfit = stats::loess(survfit_model_variable$surv ~ survfit_model_variable$time, span = f_span)	
       
       # predict
-      predict_smoothed_survfit = stats::predict(smoothed_survfit)  	
+      # predict_smoothed_survfit = stats::predict(smoothed_survfit)  	
 	  
       # TODO: modify last point and make sure not negative and not greater than previous point	
       # assign to surv variable the smoothed data	
       # TODO: use automated way to determine span loess.as() in fANCOVA package 	
-      survfit_model_variable$surv = predict_smoothed_survfit
+      # survfit_model_variable$surv = predict_smoothed_survfit
   # }
   # end if  	
 
+  # LOESS smoothing fit with automated span determination	
+  smoothed_survfit = fANCOVA::loess.as(survfit_model_variable$time, survfit_model_variable$surv, plot=FALSE)
+	
+  # predict
+  predict_smoothed_survfit = stats::predict(smoothed_survfit)  	
+
+  # overwrite surv field in survfit object	
+  survfit_model_variable$surv = predict_smoothed_survfit
+	
 	
   # return modified survfit object
   return(survfit_model_variable)
