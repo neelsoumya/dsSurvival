@@ -4,29 +4,13 @@
 \alias{plotsurvfitDS}
 \title{Performs plotting of survival analysis curves.}
 \usage{
-plotsurvfitDS(
-  formula = NULL,
-  dataName = NULL,
-  method_anonymization = 3,
-  noise = 0.03,
-  knn = 20
-)
+plotsurvfitDS(formula = NULL, dataName = NULL)
 }
 \arguments{
 \item{formula}{a character string which has the name of server-side survfit() object.
 This should be created using a call to ds.survfit()}
 
 \item{dataName}{character string of name of data frame}
-
-\item{method_anonymization}{an integer. Method of anonymization to be used (3: smoothing). Default value is 3.}
-
-\item{noise}{an integer. fraction of noise (between 0 and 1) to be added to original data. 
-Noise is added as a percentage of original value. 
-This is used for probabilistic anonymization.
-Default value is 0.03}
-
-\item{knn}{an integer. Number of nearest neighbours to be used for k nearest neighbours algoithm (for determinstic anonymization). 
-Default value is 20.}
 }
 \value{
 a privacy preserving survival curve from the server side environment.
