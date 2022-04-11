@@ -14,5 +14,6 @@ Imports:
     ggplot2,
     dplyr,
     reshape2,
-    dsBase
+    dsBase,
+    fANCOVA
 RoxygenNote: 7.1.2
