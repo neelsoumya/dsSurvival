@@ -78,6 +78,8 @@ cox.zphSLMADS<-function(fit = NULL,
       # check if model oversaturated
       coxzph_serverside$x = NULL
       coxzph_serverside$y = NULL	
+      coxzph_serverside$time = NULL
+      # coxzph_serverside$strata = NULL
       
       return(coxzph_serverside)
 }
