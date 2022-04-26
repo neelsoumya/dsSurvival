@@ -89,6 +89,8 @@ plotsurvfitDS<-function(formula = NULL,
   # overwrite surv field in survfit object	
   survfit_model_variable$surv = predict_smoothed_survfit
 	
+  survfit_model_variable$n.event = NULL
+  survfit_model_variable$n.risk  = NULL
 	
   # return modified survfit object
   return(survfit_model_variable)
