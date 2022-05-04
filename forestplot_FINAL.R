@@ -23,17 +23,29 @@ require('dsBaseClient')
 #######################
 builder <- DSI::newDSLoginBuilder()
 
-builder$append(server="server1", url="http://192.168.56.100:8080/",
-               user="administrator", password="datashield_test&", 
+# builder$append(server="server1", url="http://192.168.56.100:8080/",
+#                user="administrator", password="datashield_test&", 
+#                table = "SURVIVAL.EXPAND_NO_MISSING1")
+# 
+# builder$append(server="server2", url="http://192.168.56.100:8080/",
+#                user="administrator", password="datashield_test&", 
+#                table = "SURVIVAL.EXPAND_NO_MISSING2")
+# 
+# builder$append(server="server3", url="http://192.168.56.100:8080/",
+#                user="administrator", password="datashield_test&", 
+#                table = "SURVIVAL.EXPAND_NO_MISSING3")
+
+builder$append(server="server1", url="https://opal-sandbox.mrc-epid.cam.ac.uk",
+               user="dsuser", password="P@ssw0rd", 
                table = "SURVIVAL.EXPAND_NO_MISSING1")
 
-builder$append(server="server2", url="http://192.168.56.100:8080/",
-               user="administrator", password="datashield_test&", 
+builder$append(server="server2", url="https://opal-sandbox.mrc-epid.cam.ac.uk",
+               user="dsuser", password="P@ssw0rd", 
                table = "SURVIVAL.EXPAND_NO_MISSING2")
 
-builder$append(server="server3", url="http://192.168.56.100:8080/",
-               user="administrator", password="datashield_test&", 
-               table = "SURVIVAL.EXPAND_NO_MISSING3")
+builder$append(server="server3", url="https://opal-sandbox.mrc-epid.cam.ac.uk",
+               user="dsuser", password="P@ssw0rd", 
+               table = "SURVIVAL.EXPAND_NO_MISSING3")          
 
 logindata <- builder$build()
 
@@ -76,38 +88,72 @@ coxph_model_strata <- dsSurvivalClient::ds.coxph.SLMA(formula = 'surv_object~D$a
                           survival::strata(D$female)')
 summary(coxph_model_strata)
 
-dsSurvivalClient::ds.coxphSummary(x = 'coxph_serverside')
+# dsSurvivalClient::ds.coxphSummary(x = 'coxph_serverside')
 
-input_logHR = c(coxph_model_full$server1$coefficients[1,2], 
-                coxph_model_full$server2$coefficients[1,2], 
-                coxph_model_full$server3$coefficients[1,2])
+input_logHR = c(coxph_model_full$server1$coefficients[1,1], 
+                coxph_model_full$server2$coefficients[1,1], 
+                coxph_model_full$server3$coefficients[1,1])
 
 input_se    = c(coxph_model_full$server1$coefficients[1,3], 
                 coxph_model_full$server2$coefficients[1,3], 
                 coxph_model_full$server3$coefficients[1,3])
 
-meta_model <- metafor::rma(input_logHR, sei = input_se, method = 'REML')
+hrs <- c(coxph_model_full$server1$nevent
+            ,coxph_model_full$server2$nevent
+            ,coxph_model_full$server3$nevent
+)
 
-metafor::forest.rma(x = meta_model, digits = 4) 
+nevents <- c(coxph_model_full$server1$nevent
+            ,coxph_model_full$server2$nevent
+            ,coxph_model_full$server3$nevent
+)
+
+nparts <- c(coxph_model_full$server1$n
+            ,coxph_model_full$server2$n
+            ,coxph_model_full$server3$n
+)
+
+incr5 <- exp(5*input_logHR)
+
+incr10 <- exp(10*input_logHR)
+
+# meta_model <- metafor::rma(input_logHR, sei = input_se, method = 'REML')
+
+# metafor::forest.rma(x = meta_model, digits = 4) 
 
 studylabels <- c("Study 1","Study 2","Study 3")
 
 #Variables should be formatted as a matrix
 effects <- matrix(c(input_logHR
-                    ,input_se)
-                  ,dimnames = list(studylabels,c("logHR","SE"))
-                  ,nrow=length(studylabels)
-                  ,ncol=2)
+                   ,input_se)
+                   ,dimnames = list(studylabels,c("logHR","SE"))
+                   ,nrow=length(studylabels)
+                   ,ncol=2)
 
-mtotal <- metagen(TE=logHR, seTE=SE, data=as.data.frame(effects)
-                  , method.tau = 'REML', prediction=T, hakn=F)
+mtotal <- metagen( TE=logHR, seTE=SE, data=as.data.frame(effects)
+                 , backtransf = T
+                 , sm="HR"
+                 , method.tau = 'REML', prediction=T, hakn=F)
+
+mtotal$nparts = nparts
+mtotal$nevents = nevents
+mtotal$incr5 = incr5
 
 ########################
 # generate forest plot
 ########################
 meta::forest(mtotal
-             ,digits=4
+             ,digits=2
              ,prediction=F
-             ,leftlabs=c("Study","logHR","SE")
-             ,xlim=c(1.03,1.05)
+             ,xlim=c(1, 1.08)
+             ,leftcols = c("nparts","nevents","studlab")
+             ,leftlabs = c("#participants","#events","Study")
+             ,print.pval=F
+             ,just.studlab="center"
+             ,print.I2=F
+             ,calcwidth.hetstat = T
+             ,text.fixed="Common effect"
+             ,text.random="Random effects"
+             ,smlab="HR per one year increase of age"
              )
+
