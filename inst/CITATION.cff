@@ -1,0 +1,15 @@
+# YAML 1.2
+---
+authors: 
+  -
+    family-names: Banerjee
+    given-names: Soumya
+    orcid: "https://orcid.org/0000-0001-7748-9885"
+  -
+    family-names: Bishop
+    given-names: Tom
+cff-version: "1.0.0"
+doi: "10.1101/2022.01.04.471418"
+message: "If you use this software, please cite it using these metadata."
+title: "dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD"
+...
