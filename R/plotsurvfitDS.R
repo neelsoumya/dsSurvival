@@ -89,6 +89,7 @@ plotsurvfitDS<-function(formula = NULL,
   # overwrite surv field in survfit object	
   survfit_model_variable$surv = predict_smoothed_survfit
 	
+  # remove potentially disclosive elements	
   survfit_model_variable$n.event = NULL
   survfit_model_variable$n.risk  = NULL
 	
