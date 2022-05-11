@@ -75,7 +75,7 @@ cox.zphSLMADS<-function(fit = NULL,
       ###########################
       # disclosure checks
       ###########################
-      # check if model oversaturated
+      # check if model oversaturated and remove potentially disclosive elements
       coxzph_serverside$x = NULL
       coxzph_serverside$y = NULL	
       coxzph_serverside$time = NULL
