@@ -22,6 +22,18 @@ DataSHIELD is a platform for federated analysis of private data. DataSHIELD has 
     * https://github.com/neelsoumya/dsSurvival
 
 
+If you use the code, please cite the following manuscript:
+
+Banerjee S, Sofack G, Papakonstantinou T, Avraam D, Burton P, et al. (2022), dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD, bioRxiv: 2022.01.04.471418.
+
+https://www.biorxiv.org/content/10.1101/2022.01.04.471418v2
+
+https://doi.org/10.1101/2022.01.04.471418
+
+A bib file is available here:
+
+https://github.com/neelsoumya/dsSurvival/blob/main/CITATION.bib
+
 
 
 ## Quick start
