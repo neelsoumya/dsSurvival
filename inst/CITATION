@@ -2,14 +2,14 @@ citHeader("To cite dsSurvival in publications use:")
 
 citEntry(
   entry    = "Article",
-  title    = ,
-  author   = ,
-  journal  = ,
-  year     = ,
+  title    = "dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD",
+  author   = "Banerjee, Soumya",
+  journal  = "bioRxiv",
+  year     = 2022,
   volume   = ,
   number   = ,
   pages    = ,
-  url      = ,
+  url      = "https://doi.org/10.1101/2022.01.04.471418",
   textVersion = paste(
 
   )
