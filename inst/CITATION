@@ -10,7 +10,6 @@ citEntry(
   number   = ,
   pages    = ,
   url      = "https://doi.org/10.1101/2022.01.04.471418",
-  textVersion = paste(
-
+  textVersion = paste("Banerjee S, Sofack G, Papakonstantinou T, Avraam D, Burton P, et al. (2022), dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD, bioRxiv: 2022.01.04.471418."
   )
 )
