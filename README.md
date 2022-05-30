@@ -75,6 +75,11 @@ This uses the Opal demo server which has all server-side packages preinstalled
 https://opal-sandbox.mrc-epid.cam.ac.uk/
 
 
+You can also see the script `simple_script.R`
+
+https://github.com/neelsoumya/dsSurvival/blob/main/vignettes/simple_script.R
+
+
 ## Installation
 
 
