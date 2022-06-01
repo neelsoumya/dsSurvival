@@ -10,7 +10,7 @@ Depends:
 Imports:
     RANN,
     stringr,
-    survival,
+    survival (>= 3.2-11),
     ggplot2,
     dplyr,
     reshape2,
