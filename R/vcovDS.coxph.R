@@ -19,12 +19,14 @@ vcovDS.coxph<-function(object=NULL)
     stop("Please provide the name of a survival::coxph object", call.=FALSE)
   }
 
-  if (class(object)!="coxph")
+  surv_obj<-eval(parse(text=object), envir = parent.frame())
+  
+  if (class(surv_obj)!="coxph")
   {
     stop("Object is not of class survival::coxph, please check the name", call.=FALSE)
   }
 
-  vcov_res <- stats::vcov(object)
+  vcov_res <- stats::vcov(surv_obj)
   
   return(vcov_res)
   
