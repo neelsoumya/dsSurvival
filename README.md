@@ -30,6 +30,8 @@ https://www.biorxiv.org/content/10.1101/2022.01.04.471418v2
 
 https://doi.org/10.1101/2022.01.04.471418
 
+https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-022-06085-1
+
 A bib file is available here:
 
 https://github.com/neelsoumya/dsSurvival/blob/main/CITATION.bib
@@ -212,6 +214,8 @@ Banerjee S, Sofack G, Papakonstantinou T, Avraam D, Burton P, et al. (2022), dsS
 https://www.biorxiv.org/content/10.1101/2022.01.04.471418v2
 
 https://doi.org/10.1101/2022.01.04.471418 
+
+https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-022-06085-1
 
 A bib file is available here:
 
