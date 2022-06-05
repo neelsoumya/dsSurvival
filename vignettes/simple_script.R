@@ -1,3 +1,11 @@
+#####################################################
+# Simple script demonstrating how to use dsSurvival
+#
+# Usage:
+#         R --no-save < simple_script.R
+#####################################################
+
+
 library(knitr)
 library(rmarkdown)
 library(tinytex)
