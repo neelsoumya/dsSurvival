@@ -6,6 +6,21 @@ authors:
     given-names: Soumya
     orcid: "https://orcid.org/0000-0001-7748-9885"
   -
+    family-names: Sofack
+    given-names: Ghislain
+  -
+    family-names: Papakonstantinou
+    given-names: Thodoris
+  -
+    family-names: Avraam
+    given-names: Demetris  
+  -
+    family-names: Paul
+    given-names: Burton   
+  -
+    family-names: Daniella
+    given-names: Zoeller  
+  -
     family-names: Bishop
     given-names: Tom
 cff-version: "1.0.0"
