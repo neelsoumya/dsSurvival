@@ -48,7 +48,7 @@ publisher = {Cold Spring Harbor Laboratory},
 title = {{dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD}},
 year = {2022}
 }
-
+```
 
 ## Quick start
 
