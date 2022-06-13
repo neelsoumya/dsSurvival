@@ -25,6 +25,6 @@ authors:
     given-names: Tom
 cff-version: "1.0.0"
 doi: "10.1101/2022.01.04.471418"
-message: "If you use this software, please cite it using these metadata."
+message: "If you use this software, please cite it using these metadata: dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD, Soumya Banerjee, Ghislain Sofack, Thosoris Papakonstantinou, Demetris Avraam, Paul Burton et al., BMC Research Notes, 15(1), 2022 "
 title: "dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD"
 ...
