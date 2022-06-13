@@ -1,11 +1,14 @@
 #####################################################
 # Simple script demonstrating how to use dsSurvival
+#    with only client side package installations
 #
 # Usage:
 #         R --no-save < simple_script.R
 #####################################################
 
-
+###################
+# load libraries
+###################
 library(knitr)
 library(rmarkdown)
 library(tinytex)
