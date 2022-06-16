@@ -90,8 +90,8 @@ plotsurvfitDS<-function(formula = NULL,
   survfit_model_variable$surv = predict_smoothed_survfit
 	
   # remove potentially disclosive elements	
-  survfit_model_variable$n.event = NULL
-  survfit_model_variable$n.risk  = NULL
+  # survfit_model_variable$n.event = NULL
+  # survfit_model_variable$n.risk  = NULL
 	
   # return modified survfit object
   return(survfit_model_variable)
