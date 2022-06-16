@@ -8,7 +8,7 @@
 
 A tutorial in bookdown format with executable code is available here:
 
-https://neelsoumya.github.io/dsSurvival_bookdown/
+https://neelsoumya.github.io/dsSurvivalbookdown/
 
 
 DataSHIELD is a platform for federated analysis of private data. DataSHIELD has a client-server architecture and this package has a client side and server side component.
@@ -82,7 +82,7 @@ install.packages('opalr')
 
 * Follow the tutorial in bookdown format with executable code and synthetic data:
 
-https://neelsoumya.github.io/dsSurvival_bookdown/
+https://neelsoumya.github.io/dsSurvivalbookdown/
 
 This uses the Opal demo server which has all server-side packages preinstalled
 
@@ -160,7 +160,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient', ref = 'privacy_survival_
 
 A tutorial with executable code in bookdown format is available here: 
 
-https://neelsoumya.github.io/dsSurvival_bookdown/
+https://neelsoumya.github.io/dsSurvivalbookdown/
 
 
 
@@ -173,7 +173,7 @@ For polished publication ready plots, use the following script `forestplot_FINAL
    https://github.com/neelsoumya/dsSurvival/blob/main/forestplot_FINAL.R
    
 
-If you want to learn the basics of survival models, see the following repository:
+If you want to learn the basics of survival models, please see the following repository:
 
 https://github.com/neelsoumya/survival_models
 
