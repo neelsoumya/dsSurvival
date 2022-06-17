@@ -13,4 +13,6 @@ A shiny graphical user interface for building survival models in DataSHIELD has 
 * https://datashield-demo.obiba.org/
 
 
+v1.0.1: Minor fixes.
+
 v2.0.0: Forthcoming. This will have privacy preserving survival curves.
