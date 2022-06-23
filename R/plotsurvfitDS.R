@@ -89,9 +89,26 @@ plotsurvfitDS<-function(formula = NULL,
   # overwrite surv field in survfit object	
   survfit_model_variable$surv = predict_smoothed_survfit
 	
-  # remove potentially disclosive elements	
+  ########################################################	
+  # remove or perturb potentially disclosive elements	
+  ########################################################	
   # survfit_model_variable$n.event = NULL
   # survfit_model_variable$n.risk  = NULL
+
+  # smoother for n.event	
+  temp_fit_1 = fANCOVA::loess.as(survfit_model_variable$time, survfit_model_variable$n.event, plot=FALSE)	
+  # predict
+  temp_fit_1_predict = stats::predict(temp_fit_1)
+  # overwrite	
+  survfit_model_variable$n.event = temp_fit_1_predict
+	
+  # smoother for n.risk
+  temp_fit_2 = fANCOVA::loess.as(survfit_model_variable$time, survfit_model_variable$n.risk, plot=FALSE)	
+  # predict
+  temp_fit_2_predict = stats::predict(temp_fit_2)	
+  # overwrite
+  survfit_model_variable$n.risk = temp_fit_2_predict
+	
 	
   # return modified survfit object
   return(survfit_model_variable)
