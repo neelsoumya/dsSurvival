@@ -80,7 +80,9 @@ plotsurvfitDS<-function(formula = NULL,
   # }
   # end if  	
 
-  # LOESS smoothing fit with automated span determination	
+  ##########################################################	
+  # LOESS smoothing fit with automated span determination
+  ##########################################################	
   smoothed_survfit = fANCOVA::loess.as(survfit_model_variable$time, survfit_model_variable$surv, plot=FALSE)
 	
   # predict
