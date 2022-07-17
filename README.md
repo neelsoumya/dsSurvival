@@ -145,7 +145,7 @@ devtools::install_github('neelsoumya/dsSurvivalClient@v1.0.0')
 
 ```
 
-If you want to try privacy preserving survival curves (work in progress and to be available in v2.0), then you can do the following
+If you want to try privacy preserving survival curves (available in v2.0), you can use the main branch or you can do the following
 
 ```r
 
@@ -197,7 +197,7 @@ A shiny graphical user interface for building survival models in DataSHIELD has 
 
 v1.0.1: Minor fixes.
 
-v2.0.0: Forthcoming. This will have privacy preserving survival curves.
+v2.0.0: This has privacy preserving survival curves.
 
 
 ## Acknowledgements
