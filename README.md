@@ -155,6 +155,16 @@ devtools::install_github('neelsoumya/dsSurvivalClient', ref = 'privacy_survival_
 
 ```
 
+or
+
+```r
+
+library(devtools)
+
+devtools::install_github('neelsoumya/dsSurvivalClient@v2.0.0')
+
+```
+
 ## Usage
 
 
