@@ -112,7 +112,7 @@ https://github.com/neelsoumya/dsSurvival/blob/main/vignettes/simple_script.R
 
 * Install dsBase and dsSurvival on Opal server in the Virtual Machine (type neelsoumya/dsSurvival and main in the textboxes) as shown in the screenshot below
 
-![Screenshot of installation of package in VM](Capture_VM_install_screenshot.PNG)
+![Screenshot of installation of package in VM](https://github.com/neelsoumya/dsSurvivalClient/blob/main/project/Capture_VM_install_screenshot.PNG)
 
 See the link below on how to install a package in Opal
 
@@ -176,7 +176,7 @@ https://neelsoumya.github.io/dsSurvivalbookdown/
 
 A screenshot of the meta-analyzed hazard ratios from a survival model is shown below.
 
-![A screenshot of meta-analyzed hazard ratios from the survival model is shown below](screenshot_survival_models.png)
+![A screenshot of meta-analyzed hazard ratios from the survival model is shown below](https://github.com/neelsoumya/dsSurvivalClient/blob/main/project/screenshot_survival_models.png)
 
 For polished publication ready plots, use the following script `forestplot_FINAL.R`
 
