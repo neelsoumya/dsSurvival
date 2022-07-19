@@ -1,7 +1,7 @@
 Package: dsSurvival
 Title: dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD
 Description: DataSHIELD server side base functions for building survival models.
-Version: 2.1.0
+Version: 2.0.0
 Author: Soumya Banerjee, Demetris Avraam, Xavier Escriba Montagut, Juan Gonzalez, Paul Burton and Tom R P Bishop <sb2333@cam.ac.uk>
 Maintainer: Soumya Banerjee, Demetris Avraam, Xavier Escriba Montagut, Juan Gonzalez, Paul Burton and Tom R P Bishop <sb2333@cam.ac.uk>
 License: GPL-3
