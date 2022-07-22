@@ -109,6 +109,8 @@ https://github.com/neelsoumya/dsSurvival/blob/main/vignettes/simple_script.R
     * https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/1657634881/Testing+100+VM
 
     * https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/1657634898/Tutorial+6.1.0+100+VM
+    
+    * https://hub.docker.com/layers/rock-base/datashield/rock-base/6.2-R4.2/images/sha256-2b1ae879a4387e1dac6843ea59ac1db61816ee78467c9d30d6769a2aed330b0e?context=explore
 
 * Install dsBase and dsSurvival on Opal server in the Virtual Machine (type neelsoumya/dsSurvival and main in the textboxes) as shown in the screenshot below
 
