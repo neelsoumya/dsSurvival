@@ -211,11 +211,13 @@ v1.0.1: Minor fixes.
 
 v2.0.0: This has privacy preserving survival curves.
 
+v2.1.0: This has vcov() functionality. 
+
 
 ## Acknowledgements
 
 We acknowledge the help and support of the DataSHIELD technical team.
-We are especially grateful to Elaine Smith, Stuart Wheater, Eleanor Hyde, Stephen Sharp, Ken Ong, Yannick Marcon, Paul Burton, Demetris Avraam, Patricia Ryser-Welch, Kevin Rue-Albrecht and Wolfgang Viechtbauer for fruitful discussions and feedback.
+We are especially grateful to Elaine Smith, Stuart Wheater, Eleanor Hyde, Stephen Sharp, Ken Ong, Yannick Marcon, Paul Burton, Demetris Avraam, Patricia Ryser-Welch, Kevin Rue-Albrecht, Maria Jose Gomez Vazquez and Wolfgang Viechtbauer for fruitful discussions and feedback.
 
 
 ## Contact
