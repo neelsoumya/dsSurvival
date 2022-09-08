@@ -116,6 +116,11 @@ https://github.com/neelsoumya/dsSurvival/blob/main/vignettes/simple_script.R
 
 ![Screenshot of installation of package in VM](https://github.com/neelsoumya/dsSurvivalClient/blob/main/project/Capture_VM_install_screenshot.PNG)
 
+In the newer version of Opal your window may look like the screenshot below
+
+![Screenshot in new version of Opal](newopal_screenshot.png)
+
+
 See the link below on how to install a package in Opal
 
 https://opaldoc.obiba.org/en/latest/web-user-guide/administration/datashield.html#add-package
