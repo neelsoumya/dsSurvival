@@ -189,6 +189,9 @@ For polished publication ready plots, use the following script `forestplot_FINAL
 
    https://github.com/neelsoumya/dsSurvival/blob/main/forestplot_FINAL.R
    
+If you want to plot survival curves or Kaplan-Meier curves, see the following link:
+
+https://neelsoumya.github.io/dsSurvivalbookdown/computational-workflow.html#plotting-of-privacy-preserving-survival-curves
 
 If you want to learn the basics of survival models, please see the following repository:
 
