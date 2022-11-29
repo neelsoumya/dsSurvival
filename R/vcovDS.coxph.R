@@ -21,7 +21,7 @@ vcovDS.coxph<-function(object=NULL)
 
   surv_obj<-eval(parse(text=object), envir = parent.frame())
   
-  if (class(surv_obj)!="coxph")
+  if (! any(c("coxph") %in% class(surv_obj)))
   {
     stop("Object is not of class survival::coxph, please check the name", call.=FALSE)
   }
