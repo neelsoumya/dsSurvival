@@ -221,13 +221,15 @@ v2.0.0: This has privacy preserving survival curves.
 
 v2.1.0: This has vcov() functionality. 
 
+v2.1.1: This has minor fixes.
+
 
 ## Acknowledgements
 
 We acknowledge the help and support of the DataSHIELD technical team.
-We are especially grateful to Elaine Smith, Eleanor Hyde, Shareen Tan, Stuart Wheater, Eleanor Hyde, Stephen Sharp, Ken Ong, Yannick Marcon, Paul Burton, Demetris Avraam, Patricia Ryser-Welch, Kevin Rue-Albrecht, Maria Jose Gomez Vazquez and Wolfgang Viechtbauer for fruitful discussions and feedback.
+We are especially grateful to Elaine Smith, Eleanor Hyde, Shareen Tan, Stuart Wheater, Yannick Marcon, Paul Burton, Demetris Avraam, Patricia Ryser-Welch, Kevin Rue-Albrecht, Maria Gomez Vazquez and Wolfgang Viechtbauer for fruitful discussions and feedback.
 
-We thank @joerghenkebuero for suggestions about documentation, @AlanRace and Stefan Buchka for bug fixes and Xavier Escriba Montagut for a fix to the plotting functionality.
+We thank @StuartWheater for fixes, @joerghenkebuero for suggestions about documentation, @AlanRace and Stefan Buchka for bug fixes and Xavier Escriba Montagut for a fix to the plotting functionality.
 
 ## Contact
 
