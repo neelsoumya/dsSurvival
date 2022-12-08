@@ -39,7 +39,7 @@ cox.zphSLMADS<-function(fit = NULL,
       
       #########################################################################
       # DataSHIELD MODULE: CAPTURE THE nfilter SETTINGS                       #
-      thr <- listDisclosureSettingsDS()                                       #
+      thr <- dsBase::listDisclosureSettingsDS()                               #
       #nfilter.tab<-as.numeric(thr$nfilter.tab)                               #
       #nfilter.glm<-as.numeric(thr$nfilter.glm)                               #
       #nfilter.subset<-as.numeric(thr$nfilter.subset)                         #

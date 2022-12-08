@@ -23,7 +23,7 @@ coxphSummaryDS<-function(x = NULL
       
       #########################################################################
       # DataSHIELD MODULE: CAPTURE THE nfilter SETTINGS                       #
-      thr <- listDisclosureSettingsDS()                                       #
+      thr <- dsBase::listDisclosureSettingsDS()                               #
       #nfilter.tab<-as.numeric(thr$nfilter.tab)                               #
       #nfilter.glm<-as.numeric(thr$nfilter.glm)                               #
       #nfilter.subset<-as.numeric(thr$nfilter.subset)                         #
@@ -39,7 +39,7 @@ coxphSummaryDS<-function(x = NULL
       if (is.null(x))
       {
          stop("The name of the server-side fit Cox proportional hazards model must be set", call.=FALSE)
-      } 	
+      }
 	
 
       # evaluate the model fit parameter in parent environment
