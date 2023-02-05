@@ -223,6 +223,8 @@ v2.1.0: This has vcov() functionality.
 
 v2.1.1: This has minor fixes.
 
+v2.1.2: This has minor fixes.
+
 
 ## Acknowledgements
 
