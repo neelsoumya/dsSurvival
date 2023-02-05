@@ -15,4 +15,8 @@ A shiny graphical user interface for building survival models in DataSHIELD has 
 
 v1.0.1: Minor fixes.
 
-v2.0.0: Forthcoming. This will have privacy preserving survival curves.
+v2.0.0: This has privacy preserving survival curves.
+
+v2.1.1: Has minor fixes
+
+v2.1.2: Has minor fixes
