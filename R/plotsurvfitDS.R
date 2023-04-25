@@ -13,7 +13,8 @@
 #' @author Soumya Banerjee, Demetris Avraam, Paul Burton and Tom RP Bishop (2022).
 #' @export
 plotsurvfitDS<-function(formula = NULL,
-                        dataName = NULL #,
+                        dataName = NULL,
+                        loess.fitting = TRUE#,
 			# method_anonymization = 3,
 			# noise = 0.03,
 			# knn = 20
@@ -83,13 +84,15 @@ plotsurvfitDS<-function(formula = NULL,
   ##########################################################	
   # LOESS smoothing fit with automated span determination
   ##########################################################	
-  smoothed_survfit = fANCOVA::loess.as(survfit_model_variable$time, survfit_model_variable$surv, plot=FALSE)
-	
-  # predict
-  predict_smoothed_survfit = stats::predict(smoothed_survfit)  	
-
-  # overwrite surv field in survfit object	
-  survfit_model_variable$surv = predict_smoothed_survfit
+  if(loess.fitting){
+    smoothed_survfit = fANCOVA::loess.as(survfit_model_variable$time, survfit_model_variable$surv, plot=FALSE)
+    
+    # predict
+    predict_smoothed_survfit = stats::predict(smoothed_survfit)  	
+    
+    # overwrite surv field in survfit object	
+    survfit_model_variable$surv = predict_smoothed_survfit
+  }
 	
   ########################################################	
   # remove or perturb potentially disclosive elements	
