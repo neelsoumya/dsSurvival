@@ -13,8 +13,7 @@
 #' @author Soumya Banerjee, Demetris Avraam, Paul Burton and Tom RP Bishop (2022).
 #' @export
 plotsurvfitDS<-function(formula = NULL,
-                        dataName = NULL,
-                        loess.fitting = TRUE#,
+                        dataName = NULL#,
 			# method_anonymization = 3,
 			# noise = 0.03,
 			# knn = 20
@@ -84,15 +83,21 @@ plotsurvfitDS<-function(formula = NULL,
   ##########################################################	
   # LOESS smoothing fit with automated span determination
   ##########################################################	
-  if(loess.fitting){
-    smoothed_survfit = fANCOVA::loess.as(survfit_model_variable$time, survfit_model_variable$surv, plot=FALSE)
-    
-    # predict
-    predict_smoothed_survfit = stats::predict(smoothed_survfit)  	
-    
-    # overwrite surv field in survfit object	
-    survfit_model_variable$surv = predict_smoothed_survfit
+  if(!is.null(survfit_model_variable$strata)){
+    strata_cumsum <- c(0, cumsum(survfit_model_variable$strata))
+    lapply(2:length(strata_cumsum), function(x){
+      fANCOVA::loess.as(survfit_model_variable$time[(strata_cumsum[x-1]+1):strata_cumsum[x]],
+                        survfit_model_variable$surv[(strata_cumsum[x-1]+1):strata_cumsum[x]],
+                        plot=FALSE) |> stats::predict()
+    }) |> unlist() -> smoothed_survfit
+  } else {
+    fANCOVA::loess.as(survfit_model_variable$time,
+                      survfit_model_variable$surv,
+                      plot=FALSE) |> stats::predict() -> smoothed_survfit
   }
+  
+  # overwrite surv field in survfit object	
+  survfit_model_variable$surv = smoothed_survfit
 	
   ########################################################	
   # remove or perturb potentially disclosive elements	
