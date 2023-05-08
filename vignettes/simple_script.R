@@ -16,6 +16,7 @@ library(survival)
 library(metafor)
 library(ggplot2)
 library(dsSurvivalClient)
+library(patchwork)
 require('DSI')
 require('DSOpal')
 require('dsBaseClient')
@@ -121,6 +122,8 @@ metafor::forest.rma(x = meta_model, digits = 4)
 ########################
 dsSurvivalClient::ds.survfit(formula='surv_object~1', objectname='survfit_object')
 dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object')
+res <- dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object', ggplot = TRUE)
+(res[[1]] | res[[2]] | res[[3]])
 
 ########################
 # disconnect
