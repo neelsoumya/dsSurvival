@@ -189,6 +189,10 @@ For polished publication ready plots, use the following script `forestplot_FINAL
 
    https://github.com/neelsoumya/dsSurvival/blob/main/forestplot_FINAL.R
    
+or the script `simple_script.R`
+
+https://github.com/neelsoumya/dsSurvival/blob/main/vignettes/simple_script.R
+   
 If you want to plot survival curves or Kaplan-Meier curves, see the following link:
 
 https://neelsoumya.github.io/dsSurvivalbookdown/computational-workflow.html#plotting-of-privacy-preserving-survival-curves
@@ -208,7 +212,7 @@ https://github.com/neelsoumya/dsMiscellaneous
 v1.0.0: A basic first release of survival models in DataSHIELD. This release has Cox proportional hazards models, summaries of models, diagnostics and the ability to meta-analyze hazard ratios. There is also capability to generate forest plots of meta-analyzed hazard ratios. This release supports study-level meta-analysis (SLMA).
 
 
-A shiny graphical user interface for building survival models in DataSHIELD has also been created by Xavier Escriba Montagut and Juan Gonzalez. It uses dsSurvival and dsSurvivalClient.
+A shiny graphical user interface for building survival models in DataSHIELD has also been created by Xavier Escriba Montagut and Juan Gonzalez. It uses `dsSurvival` and `dsSurvivalClient`.
 
 
 * https://github.com/isglobal-brge/ShinyDataSHIELD
@@ -229,6 +233,8 @@ v2.1.0: This has vcov() functionality.
 v2.1.1: This has minor fixes.
 
 v2.1.2: This has minor fixes.
+
+v2.1.3: This has minor fixes and fixes for plotting of a stratified survival analysis.
 
 
 ## Acknowledgements
