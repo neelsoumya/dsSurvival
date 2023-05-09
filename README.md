@@ -169,7 +169,7 @@ or
 
 library(devtools)
 
-devtools::install_github('neelsoumya/dsSurvivalClient@v2.0.0')
+devtools::install_github('neelsoumya/dsSurvivalClient@v2.1.3')
 
 ```
 
