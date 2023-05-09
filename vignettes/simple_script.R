@@ -95,8 +95,6 @@ dsSurvivalClient::ds.cox.zphSLMA(fit = 'coxph_serverside')
 
 dsSurvivalClient::ds.coxphSummary(x = 'coxph_serverside')
 
-dsSurvivalClient::ds.coxphSummary(x = 'coxph_serverside')
-
 
 ##############################
 # meta-analyze hazard ratios
@@ -122,6 +120,8 @@ metafor::forest.rma(x = meta_model, digits = 4)
 ########################
 dsSurvivalClient::ds.survfit(formula='surv_object~1', objectname='survfit_object')
 dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object')
+
+# better looking survival curves using ggplot (courtesy Xavier Escriba Montagut)
 res <- dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object', ggplot = TRUE)
 (res[[1]] | res[[2]] | res[[3]])
 
