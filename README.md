@@ -77,6 +77,7 @@ install.packages('metafor')
 install.packages('DSOpal')
 install.packages('DSI')
 install.packages('opalr')
+install.packages('patchwork')
 ```
 
 
