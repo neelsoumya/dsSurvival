@@ -235,7 +235,7 @@ v2.1.1: This has minor fixes.
 
 v2.1.2: This has minor fixes.
 
-v2.1.3: This has minor fixes and fixes for plotting of a stratified survival analysis.
+v2.1.3: This has minor fixes, fixes for plotting of a stratified survival analysis and use of ggplot in plotting survival curves.
 
 
 ## Acknowledgements
