@@ -4,7 +4,8 @@ AggregateMethods:
     cox.zphSLMADS,
     summarySurvDS,
     plotsurvfitDS,
-    vcovDS.coxph
+    vcovDS.coxph,
+    life.tableDS
 AssignMethods:
     coxphSLMAassignDS,
     SurvDS,
