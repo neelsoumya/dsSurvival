@@ -126,6 +126,17 @@ res <- dsSurvivalClient::ds.plotsurvfit(formula = 'survfit_object', ggplot = TRU
 (res[[1]] | res[[2]] | res[[3]])
 
 ########################
+# get life table
+res <- dsSurvivalClient::ds.life.table("survfit_object")
+# plot life table
+plot_life.table(res)
+# stratified example
+res_2 <- dsSurvivalClient::ds.life.table("coxph_serverside")
+plot_life.table(res_2, "strata")
+
+########################
+
+########################
 # disconnect
 ########################
 DSI::datashield.logout(conns = connections)
