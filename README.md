@@ -295,9 +295,24 @@ year = {2022}
 
 
 
+
+
 or see the CITATION.cff file created using
 
 https://citation-file-format.github.io/cff-initializer-javascript/
 
 -->
+
+## Publications
+
+The following publications describe `dsSurvival`
+
+Banerjee, S., Sofack, G.N., Papakonstantinou, T. et al. dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD. BMC Res Notes 15, 197 (2022). https://doi.org/10.1186/s13104-022-06085-1
+
+Banerjee, S., Bishop, T.R.P. dsSurvival 2.0: privacy enhancing survival curves for survival models in the federated DataSHIELD analysis system. BMC Res Notes 16, 98 (2023). https://doi.org/10.1186/s13104-023-06372-5
+
+
+If you use the code, please cite the following manuscript:
+
+Banerjee, S., Sofack, G.N., Papakonstantinou, T. et al. dsSurvival: Privacy preserving survival models for federated individual patient meta-analysis in DataSHIELD. BMC Res Notes 15, 197 (2022). https://doi.org/10.1186/s13104-022-06085-1
 
