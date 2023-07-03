@@ -9,9 +9,9 @@
 life.tableDS <- function(survfit_object){
   survfit_object_re <- summary(
     survfit_object, times = seq(
-      plyr::round_any(min(survfit_object$time), 10, floor), 
-      plyr::round_any(max(survfit_object$time), 10, ceiling), 
-      10 # TODO This should be a function argument!
+      plyr::round_any(min(survfit_object$time), 1, floor), 
+      plyr::round_any(max(survfit_object$time), 1, ceiling), 
+      1 # TODO This should be a function argument!
     )
   )
   df <- data.frame(
